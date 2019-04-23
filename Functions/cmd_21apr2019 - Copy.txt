@@ -1,0 +1,103 @@
+  491  ll
+  492  ll DACFeb19/
+  493  cd DACFeb19/Foundations/
+  494  mkdir C++
+  495  cd C++
+  496  mkdir Functions
+  497  cd Functions/
+  498  vi namespacetest1.cpp
+  499  c++ -o namespacetest1 namespacetest1.cpp 
+  500  ./namespacetest1 
+  501  echo $1
+  502  ./namespacetest1 
+  503  echo $?
+  504  vi namespacetest1.cpp
+  505  c++ -o namespacetest1 namespacetest1.cpp 
+  506  echo $?
+  507  ./namespacetest1 
+  508  echo $?
+  509  vi namespacetest1.cpp
+  510  c++ -o namespacetest1 namespacetest1.cpp 
+  511  ./namespacetest1 
+  512  echo $?
+  513  vi namespacetest1.cpp
+  514  c++ -o namespacetest1 namespacetest1.cpp 
+  515  vi namespacetest1.cpp
+  516  c++ -o namespacetest1 namespacetest1.cpp 
+  517  ./namespacetest1 
+  518  echo $?
+  519  vi namespacetest1.cpp
+  520  cl
+  521  objdump -t namespacetest1
+  522  c++filt _ZN5Drama5actorE
+  523  c++filt _ZN5Drama5actor
+  524  vi people.h
+  525  vi namespacetest2.cpp
+  526  c++ -o namespacetest2 namespacetest2.cpp 
+  527  ./namespacetest2
+  528  echo $?
+  529  objdump -t namespacetest2
+  530  vi namespacetest2.cpp
+  531  c++ -o namespacetest2 namespacetest2.cpp 
+  532  ./namespacetest2
+  533  echo $?
+  534  vi namespacetest2.cpp
+  535  vi stdnamespctest.cpp
+  536  c++ -o stdnamespctest stdnamespctest.cpp 
+  537  ./stdnamespctest 
+  538  vi stdnamespctest.cpp
+  539  vi power.cpp
+  540  vi functest.cpp
+  541  c++ -c power.cpp 
+  542  vi functest.cpp
+  543  c++ -o functest functest.cpp 
+  544  vi functest.cpp
+  545  c++ -o functest functest.cpp 
+  546  c++ -o functest functest.cpp power.o
+  547  ./functest
+  548  vi functest.cpp
+  549  c++ -o functest functest.cpp power.o
+  550  vi power.cpp
+  551  objdump -t power.o
+  552  vi functest.cpp
+  553  c++ -o functest functest.cpp power.o
+  554  ./functest 
+  555  c++filt _ZN5Actor6ActionEdfPs
+  556  vi power.cpp
+  557  ll
+  558  ll ../../C/Basics/
+  559  vi ../../C/Basics/myfunc.c
+  560  cp ../../C/Basics/myfunc.o .
+  561  vi cfunctest.cpp
+  562  c++ -o cfunctest cfunctest.cpp myfunc.o 
+  563  vi cfunctest.cpp
+  564  objdump -t myfunc.o 
+  565  vi cfunctest.cpp 
+  566  c++ -o cfunctest cfunctest.cpp myfunc.o 
+  567  ./cfunctest 
+  568  vi defargtest.cpp
+  569  cp ~/Shared/.vimrc ~/
+  570  chmod a-x ~/.vimrc 
+  571  vi defargtest.cpp
+  572  vi ~/.vimrc 
+  573  vi defargtest.cpp
+  574  c++ -o defargtest defargtest.cpp 
+  575  ./defargtest 
+  576  cp defargtest.cpp funcovldtest.cpp
+  577  vi funcovldtest.cpp 
+  578  c++ -o funcovldtest funcovldtest.cpp 
+  579  vi funcovldtest.cpp 
+  580  c++ -o funcovldtest funcovldtest.cpp 
+  581  vi funcovldtest.cpp 
+  582  c++ -o funcovldtest funcovldtest.cpp 
+  583  ./funcovldtest 
+  584  vi funcovldtest.cpp 
+  585  vi reftypetest.cpp
+  586  c++ -o reftypetest reftypetest.cpp 
+  587  ./reftypetest 
+  588  vi reftypetest.cpp
+  589  c++ -o reftypetest reftypetest.cpp 
+  590  ./reftypetest 
+  591  vi reftypetest.cpp
+  592  pwd
+  593  history > cmd_21apr2019.txt

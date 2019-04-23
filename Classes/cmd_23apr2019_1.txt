@@ -1,0 +1,64 @@
+  671  cd DACFeb19/
+  672  cd Foundations/C++/Classes/
+  673  cp ctortest.cpp dtortest.cpp
+  674  vi dtortest.cpp 
+  675  c++ -o dtortest dtortest.cpp 
+  676  vi dtortest.cpp 
+  677  c++ -o dtortest dtortest.cpp 
+  678  ./dtortest 
+  679  vi dtortest.cpp 
+  680  c++ -o dtortest dtortest.cpp 
+  681  ./dtortest 
+  682  vi dtortest.cpp 
+  683  c++ -o dtortest dtortest.cpp 
+  684  ./dtortest 
+  685  vi dtortest.cpp 
+  686  c++ -o dtortest dtortest.cpp 
+  687  ./dtortest 
+  688  vi dtortest.cpp 
+  689  c++ -o dtortest dtortest.cpp 
+  690  ./dtortest 
+  691  vi dtortest.cpp 
+  692  c++ -o dtortest dtortest.cpp 
+  693  cp dtortest.cpp objreftest.cpp
+  694  vi objreftest.cpp 
+  695  c++ -o objreftest objreftest.cpp 
+  696  ./objreftest 
+  697  vi objreftest.cpp 
+  698  c++ -o objreftest objreftest.cpp 
+  699  ./objreftest 
+  700  vi objreftest.cpp 
+  701  c++ -o objreftest objreftest.cpp 
+  702  ./objreftest 
+  703  vi objreftest.cpp 
+  704  c++ -o objreftest objreftest.cpp 
+  705  vi objreftest.cpp 
+  706  c++ -o objreftest objreftest.cpp 
+  707  vi objreftest.cpp 
+  708  c++ -o objreftest objreftest.cpp 
+  709  ./objreftest 
+  710  vi objreftest.cpp 
+  711  c++filt _ZNK8Interval7GetTimeEv
+  712  vi objreftest.cpp 
+  713  c++ -o objreftest objreftest.cpp 
+  714  vi objreftest.cpp 
+  715  c++ -o objreftest objreftest.cpp 
+  716  ./objreftest 
+  717  cp classtest1.cpp newdelobjtest.cpp
+  718  vi newdelobjtest.cpp 
+  719  c++ -o newdelobjtest newdelobjtest.cpp 
+  720  vi newdelobjtest.cpp 
+  721  c++ -o newdelobjtest newdelobjtest.cpp 
+  722  vi newdelobjtest.cpp 
+  723  c++ -o newdelobjtest newdelobjtest.cpp 
+  724  ./newdelobjtest 
+  725  vi newdelobjtest.cpp 
+  726  c++ -o newdelobjtest newdelobjtest.cpp 
+  727  ./newdelobjtest 
+  728  vi newdelobjtest.cpp 
+  729  c++ -o newdelobjtest newdelobjtest.cpp 
+  730  ./newdelobjtest 
+  731  vi newdelobjtest.cpp 
+  732  c++ -o newdelobjtest newdelobjtest.cpp 
+  733  ./newdelobjtest 
+  734  history > cmd_23apr2019_1.txt
