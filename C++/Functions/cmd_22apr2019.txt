@@ -1,0 +1,35 @@
+  598  ll
+  599  cd C++/
+  600  ll
+  601  cd ..
+  602  cp -r C++/ ~/Shared/
+  603  exit
+  604  ll
+  605  ll DACFeb19/
+  606  cd DACFeb19/Foundations/
+  607  cd C++/Functions/
+  608  vi throwtest.cpp
+  609  c++ -o throwtest throwtest.cpp 
+  610  ./throwtest 
+  611  vi throwtest.cpp
+  612  c++ -o throwtest throwtest.cpp 
+  613  ./throwtest 
+  614  vi throwtest.cpp
+  615  c++ -o throwtest throwtest.cpp 
+  616  ./throwtest 
+  617  vi throwtest.cpp
+  618  ./throwtest 
+  619  cp throwtest.cpp catchtest1.cpp
+  620  vi catchtest1.cpp 
+  621  c++ -o catchtest1 catchtest1.cpp 
+  622  ./catchtest1
+  623  man printf
+  624  cp catchtest1.cpp catchtest2.cpp
+  625  vi catchtest2.cpp
+  626  c++ -o catchtest2 catchtest2.cpp 
+  627  vi catchtest2.cpp
+  628  c++ -o catchtest2 catchtest2.cpp 
+  629  ./catchtest2
+  630  ll *.cpp
+  631  ll
+  632  history >cmd_22apr2019.txt

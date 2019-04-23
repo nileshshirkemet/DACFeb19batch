@@ -1,0 +1,79 @@
+  743  cd DACFeb19/Foundations/C++/Classes/
+  744  cp newdelobjtest.cpp newdelarrtest.cpp
+  745  vi newdelarrtest.cpp 
+  746  c++ -o newdelarrtest newdelarrtest.cpp 
+  747  vi newdelarrtest.cpp 
+  748  c++ -o newdelarrtest newdelarrtest.cpp 
+  749  vi newdelarrtest.cpp 
+  750  c++ -o newdelarrtest newdelarrtest.cpp 
+  751  ./newdelarrtest 
+  752  vi newdelarrtest.cpp 
+  753  c++ -o newdelarrtest newdelarrtest.cpp 
+  754  ./newdelarrtest 
+  755  vi newdelarrtest.cpp 
+  756  c++ -o newdelarrtest newdelarrtest.cpp 
+  757  ./newdelarrtest 
+  758  cp classtest2.cpp opovldtest1.cpp
+  759  vi opovldtest1.cpp 
+  760  c++ -o opovldtest1 opovldtest1.cpp 
+  761  ./opovldtest1 
+  762  vi opovldtest1.cpp 
+  763  c++ -o opovldtest1 opovldtest1.cpp 
+  764  ./opovldtest1 
+  765  vi opovldtest1.cpp 
+  766  c++ -o opovldtest1 opovldtest1.cpp 
+  767  ./opovldtest1 
+  768  vi opovldtest1.cpp 
+  769  c++ -o opovldtest1 opovldtest1.cpp 
+  770  ./opovldtest1 
+  771  vi opovldtest1.cpp 
+  772  c++ -o opovldtest1 opovldtest1.cpp 
+  773  vi opovldtest1.cpp 
+  774  c++ -o opovldtest1 opovldtest1.cpp 
+  775  vi opovldtest1.cpp 
+  776  c++ -o opovldtest1 opovldtest1.cpp 
+  777  ./opovldtest1 
+  778  vi opovldtest1.cpp 
+  779  c++ -o opovldtest1 opovldtest1.cpp 
+  780  vi opovldtest1.cpp 
+  781  c++ -o opovldtest1 opovldtest1.cpp 
+  782  ./opovldtest1 
+  783  vi opovldtest1.cpp 
+  784  c++ -o opovldtest1 opovldtest1.cpp 
+  785  ./opovldtest1 
+  786  vi opovldtest1.cpp 
+  787  c++ -o opovldtest1 opovldtest1.cpp 
+  788  ./opovldtest1 
+  789  vi opovldtest1.cpp 
+  790  cp opovldtest1.cpp opovldtest2.cpp
+  791  vi opovldtest2.cpp
+  792  c++ -o opovldtest2 opovldtest2.cpp 
+  793  ./opovldtest2
+  794  vi opovldtest2.cpp
+  795  c++ -o opovldtest2 opovldtest2.cpp 
+  796  vi opovldtest2.cpp
+  797  c++ -o opovldtest2 opovldtest2.cpp 
+  798  ./opovldtest2
+  799  cp newdelobjtest.cpp objcopytest.cpp
+  800  vi objcopytest.cpp 
+  801  c++ -o objcopytest objcopytest.cpp 
+  802  ./objcopytest 
+  803  vi objcopytest.cpp 
+  804  c++ -o objcopytest objcopytest.cpp 
+  805  ./objcopytest 
+  806  vi objcopytest.cpp 
+  807  c++ -o objcopytest objcopytest.cpp 
+  808  ./objcopytest 
+  809  vi objcopytest.cpp 
+  810  c++ -o objcopytest objcopytest.cpp 
+  811  ./objcopytest 
+  812  vi objcopytest.cpp 
+  813  c++ -o objcopytest objcopytest.cpp 
+  814  ./objcopytest 
+  815  vi objcopytest.cpp 
+  816  c++ -o objcopytest objcopytest.cpp 
+  817  ./objcopytest 
+  818  vi objcopytest.cpp 
+  819  c++ -o objcopytest objcopytest.cpp 
+  820  ./objcopytest 
+  821  history >cmd_23apr2019_2_evening.txt 
