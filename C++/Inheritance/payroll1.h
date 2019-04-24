@@ -74,6 +74,7 @@ namespace Payroll
 			return sales;
 		}
 
+		//hiding base-class method
 		double GetIncome() const
 		{
 			double income = Employee::GetIncome();

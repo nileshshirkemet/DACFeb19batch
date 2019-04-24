@@ -47,7 +47,7 @@ namespace Payroll
 			return income;
 		}
 
-		~Employee()
+		virtual ~Employee()
 		{
 			#ifdef _TESTING
 			std::cout << "Employee object deactivated" << std::endl;
@@ -75,7 +75,8 @@ namespace Payroll
 			return sales;
 		}
 
-		//overriding method
+#define _TESTING
+		//overriding base-class method
 		double GetIncome() const
 		{
 			double income = Employee::GetIncome();

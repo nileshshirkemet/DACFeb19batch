@@ -1,0 +1,1000 @@
+   26  javac survey/FeedbackService.java
+   27  vi survey/RESTfulApp.java 
+   28  javac survey/RESTfulApp.java 
+   29  cd ../..
+   30  ~/glassfish4/bin/asadmin start-domain
+   31  ~/glassfish4/bin/asadmin deploy .
+   32  cd WEB-INF/classes/
+   33  vi survey/FeedbackService.java 
+   34  javac survey/FeedbackService.java 
+   35  touch ../../.reload 
+   36  vi ../../client.html 
+   37  ~/glassfish4/bin/asadmin stop-domain
+   38  rm -r ~/glassfish4/
+   39  cd ~
+   40  unzip ~/Shared/Install/glassfish-4.1.zip 
+   41  cd /SoftDev/Test/
+   42  ll
+   43  cd RESTTest/
+   44  ~/glassfish4/bin/asadmin start-domain
+   45  ~/glassfish4/bin/asadmin deploy .
+   46  ~/glassfish4/bin/asadmin undeploy RESTTest
+   47  ls
+   48  cd www/html/
+   49  ls
+   50  ls scripts/
+   51  ls
+   52  cd ..
+   53  ls
+   54  ls
+   55  cd Test/
+   56  ls
+   57  exit
+   58  cd /usr/local/
+   59  ll
+   60  ll bin/
+   61  ll include/
+   62  ll sbin/
+   63  ll src
+   64  cd /tmp/
+   65  tar xvf ~/Shared/Install/node-v7.5.0-linux-x86.tar.xz 
+   66  cd node-v7.5.0-linux-x86/
+   67  ll
+   68  sudo mv * /usr/local/
+   69  sudo cp -r . /usr/local/
+   70  node -v
+   71  npm -v
+   72  rm -r /tmp/node-v7.5.0-linux-x86/
+   73  ll
+   74  cd Test
+   75  ll
+   76  cd jsrs/
+   77  ll
+   78  rm -r node_modules/
+   79  npm install express
+   80  vi server.js 
+   81  npm config set strict-ssl false
+   82  npm install express
+   83  npm install body-parser
+   84  ll
+   85  node server.js 
+   86  cd Test
+   87  ll
+   88  cd jsrs/
+   89  ll
+   90  np server.js 
+   91  vi server.js 
+   92  node -v
+   93  node server.js 
+   94  php --version
+   95  cd ..
+   96  cd SoftDev/Test
+   97  ll
+   98  cp -r ~/Shared/Testing/Distributed/ JWSTest
+   99  cd JWSTest/
+  100  ll
+  101  rm RMI*.*
+  102  ll
+  103  cd shopping/
+  104  ll
+  105  rm -r jaxws
+  106  rm -r client
+  107  vi Store.java 
+  108  rm Cart*.*
+  109  rm PriceManager*.*
+  110  ll
+  111  mv ItemDetail.java OrderDetail.java
+  112  vi OrderDetail.java
+  113  javac OrderDetail.java
+  114  mv ShopKeeperWS.java SalesManagerWS.java
+  115  vi Store.java 
+  116  javac Store.java 
+  117  vi SalesManagerWS.java 
+  118  javac SalesManagerWS.java 
+  119  cd ..
+  120  javac shopping/SalesManagerWS.java 
+  121  vi SalesManagerWS.java 
+  122  vi shopping/SalesManagerWS.java 
+  123  javac shopping/SalesManagerWS.java 
+  124  vi JWSServerTest.java 
+  125  javac JWSServerTest.java 
+  126  vi JWSServerTest.java 
+  127  javac JWSServerTest.java 
+  128  java JWSServerTest &
+  129  vi JWSClientTest.java 
+  130  wsimport -p shopping.client http://localhost:8056/shopping/salesmanager?wsdl
+  131  vi JWSClientTest.java 
+  132  javac JWSClientTest.java 
+  133  vi JWSClientTest.java 
+  134  javac JWSClientTest.java 
+  135  java JWSClientTest apple 12
+  136  java JWSClientTest cabbage 3
+  137  java JWSClientTest orange 500
+  138  java JWSClientTest orange 50
+  139  np client.php
+  140  vi client.php
+  141  php client.php 
+  142  vi client.php
+  143  php client.php 
+  144  vi client.php
+  145  php client.php 
+  146  vi client.php
+  147  php client.php 
+  148  vi client.php
+  149  php client.php 
+  150  vi client.php
+  151  php client.php 
+  152  vi client.php 
+  153  php client.php 
+  154  vi client.php 
+  155  php client.php 
+  156  cd Test
+  157  ll
+  158  cp -r ~/Shared/JSFTest/ .
+  159  ~/glassfish4/bin/asadmin start-domain
+  160  cd JSFTest/WEB-INF/classes/
+  161  md ../lib
+  162  mkdir ../lib
+  163  cp ~/Shared/metnosql/lib/metnosql.jar ../lib
+  164  export CLASSPATH=.:~/glassfish4/glassfish/lib/javaee.jar:../lib/*
+  165  vi model/VisitorManagedBean.java 
+  166  vi model/Visitor.java 
+  167  vi model/VisitorManagedBean.java 
+  168  javac model/VisitorManagedBean.java 
+  169  vi model/VisitorManagedBean.java 
+  170  javac model/VisitorManagedBean.java 
+  171  ll model/
+  172  cd ../..
+  173  ll
+  174  ~/glassfish4/bin/asadmin deploy .
+  175  cd WEB-INF/classes/
+  176  vi model/Visitor.java 
+  177  javac model/Visitor.java 
+  178  touch ../../.reload
+  179  rm ~/VisitorManagedBean.store 
+  180  vi model/Visitor.java 
+  181  javac model/Visitor.java 
+  182  rm ~/VisitorManagedBean.store 
+  183  touch ../../.reload
+  184  vi model/Visitor.java 
+  185  javac model/Visitor.java 
+  186  rm ~/VisitorManagedBean.store 
+  187  touch ../../.reload
+  188  vi model/VisitorManagedBean.java 
+  189  vi ~/VisitorManagedBean.store 
+  190  vi model/VisitorManagedBean.java 
+  191  cd ../../..
+  192  ll
+  193  cd RESTTest/WEB-INF/classes/
+  194  ll ../..
+  195  cd ..
+  196  rm client.html 
+  197  rm jquery.js 
+  198  cp ~/Shared/jsrs/angular.js 
+  199  cp ~/Shared/jsrs/angular.js .
+  200  cp ~/Shared/jsrs/view.html .
+  201  cp ~/Shared/jsrs/submit.html .
+  202  vi submit.html 
+  203  vi view.html 
+  204  cd WEB-INF/classes/
+  205  ll 
+  206  vi survey/RESTfulApp.java 
+  207  vi survey/FeedbackInfo.java 
+  208  md ../lib
+  209  mkdir ../lib
+  210  cp ~/Shared/metnosql/ ../lib/
+  211  cp ~/Shared/metnosql/lib/metnosql.jar ../lib/
+  212  vi survey/FeedbackService.java 
+  213  ls
+  214  cd Practice/
+  215  ls
+  216  vi prompttest.js
+  217  node prompttest.js
+  218  npm install prompt-sync
+  219  cd ..
+  220  ls
+  221  cd Test/
+  222  ls
+  223  cd jsrs/
+  224  ls
+  225  cp /SoftDev/Practice/prompttest.js .
+  226  node prompttest.js 
+  227  npm install prompt
+  228  node prompttest.js 
+  229  rm prompttest.js 
+  230  cd /SoftDev/
+  231  ls
+  232  cd Practice/
+  233  ls
+  234  rm prompttest.js 
+  235  exit
+  236  cd Test
+  237  ll
+  238  cd JWSTest/
+  239  ll
+  240  java JWSServerTest &
+  241  vi JWSClientTest.java 
+  242  java JWSClientTest apple 9
+  243  md WebClientApp
+  244  mkdir WebClientApp
+  245  cd WebClientApp/
+  246  mkdir WEB-INF
+  247  mkdir WEB-INF/classes
+  248  cd WEB-INF/classes/
+  249  cp ../../../../RESTTest/WEB-INF/web.xml ..
+  250  mkdir shopping
+  251  mkdir shopping/client
+  252  cp ../../../shopping/client/*.class shopping/client/
+  253  ll shopping/client/
+  254  cd ../..
+  255  vi test.jsp
+  256  ~/glassfish4/bin/asadmin start-domain
+  257  vi test.jsp
+  258  cd WEB-INF/classes/
+  259  md sales
+  260  mkdir sales
+  261  cp ../../../../RESTTest/WEB-INF/classes/survey/RESTfulApp.java sales/
+  262   
+  263  javac sales/RESTfulApp.java 
+  264  export CLASSPATH=.:~/glassfish4/glassfish/lib/javaee.jar 
+  265  javac sales/RESTfulApp.java 
+  266  vi sales/OrderInput.java
+  267  javac sales/OrderInput.java
+  268  cp ../../../../RESTTest/WEB-INF/classes/survey/FeedbackService.java sales/OrderManagerRS.java
+  269  vi sales/OrderManagerRS.java
+  270  javac sales/OrderManagerRS.java
+  271  vi sales/OrderManagerRS.java
+  272  javac sales/OrderManagerRS.java
+  273  vi sales/OrderInput.java
+  274  javac sales/OrderInput.java
+  275  vi sales/OrderManagerRS.java
+  276  javac sales/OrderManagerRS.java
+  277  touch ../../.reload
+  278  cp ~/Shared/Testing/ajaxclient.html ../..
+  279  cp ~/Shared/Testing/jquery.js ../..
+  280  vi ../../ajaxclient.html 
+  281  ~/glassfish4/bin/asadmin stop-domain
+  282  cd Test/JWSTest/
+  283  vi JWSClientTest.java 
+  284  javap sales.client.OrderInfo
+  285  javap shopping.client.OrderInfo
+  286  ll
+  287  cd Practice/
+  288  ll
+  289  mkdir Nilesh
+  290  vi finance.h
+  291  mv finance.h finance.cpp
+  292  vi finance.cpp 
+  293  cc -c finance.cpp 
+  294  vi finance.cpp 
+  295  cc -c finance.cpp 
+  296  vi finance.cpp 
+  297  cc -c finance.cpp 
+  298  vi finance.cpp 
+  299  cc -c finance.cpp 
+  300  clear
+  301  vi finance.cpp 
+  302  cc -c finance.cpp 
+  303  vi finance.cpp 
+  304  cc -c finance.cpp 
+  305  vi finance.cpp 
+  306  cc -c finance.cpp 
+  307  vi finance.cpp 
+  308  clear
+  309  vi finance.cpp 
+  310  cc -c finance.cpp 
+  311  vi finance.cpp 
+  312  cc -c finance.cpp 
+  313  vi finance.cpp 
+  314  cc -c finance.cpp 
+  315  vi finance.cpp 
+  316  cc -c finance.cpp 
+  317  vi finance.cpp 
+  318  cc -c finance.cpp 
+  319  vi finance.cpp 
+  320  cc finance.cpp 
+  321  vi finance.cpp 
+  322  cc finance.cpp 
+  323  c++ finance.cpp 
+  324  clear
+  325  ./a.out
+  326  vi finance.cpp 
+  327  c++ finance.cpp 
+  328  ./a.out
+  329  vi finance.cpp 
+  330  cp finance.cpp finance1.cpp
+  331  vi finance1.cpp
+  332  c++ finance1.cpp
+  333  vi finance1.cpp
+  334  c++ finance1.cpp
+  335  vi finance1.cpp
+  336  c++ finance1.cpp
+  337  vi finance1.cpp
+  338  c++ finance1.cpp
+  339  clear
+  340  ll
+  341  cd Nilesh/
+  342  ll
+  343  cp finance1.cpp Nilesh
+  344  cp ../finance1.cpp .
+  345  cp ../finance.cpp .
+  346  ll
+  347  vi finance1.cpp
+  348  cl scr
+  349  clear
+  350  exit
+  351  cd Test
+  352  mkdir SwingMVCTest
+  353  cd SwingMVCTest/
+  354  cp ~/Shared/Document.java .
+  355  vi Document.java 
+  356  vi Visitor.java
+  357  javac -d . Visitor.java 
+  358  ll
+  359  javac -d . Document.java 
+  360  vi VisitorModel.java
+  361  javac -d . VisitorModel.java
+  362  vi VisitorModel.java
+  363  javac -d . VisitorModel.java
+  364  vi VisitorModel.java
+  365  vi Document.java 
+  366  javac -d . Document.java 
+  367  vi VisitorModel.java
+  368  javac -d . VisitorModel.java
+  369  vi VisitorModel.java
+  370  javac -d . VisitorModel.java
+  371  vi VisitorModel.java
+  372  javac -d . VisitorModel.java
+  373  vi Visitor.java
+  374  vi VisitorModel.java
+  375  javac -d . VisitorModel.java
+  376  javac -d . Visitor.java 
+  377  javac -d . VisitorModel.java
+  378  ll
+  379  vi VisitorView.java
+  380  javac -d . VisitorView.java
+  381  vi VisitorView.java
+  382  javac -d . VisitorView.java
+  383  vi VisitorView.java
+  384  javac -d . VisitorView.java
+  385  vi VisitorController.java
+  386  vi VisitorModel.java 
+  387  vi VisitorController.java
+  388  vi VisitorView.java
+  389  vi VisitorController.java
+  390  javac -d . VisitorController.java
+  391  java app.VisitorController
+  392  vi VisitorView.java
+  393  javac -d . VisitorView.java
+  394  java app.VisitorController
+  395  vi ~/Documents/visitors.xml 
+  396  vi VisitorModel.java
+  397  vi ~/Documents/visitors.xml 
+  398  vi Document.java 
+  399  javac -d . Document.java 
+  400  rm ~/Documents/visitors.xml 
+  401  java app.VisitorController
+  402  vi ~/Documents/visitors.xml 
+  403  vi Document.java 
+  404  vi Visitor.java 
+  405  javac -d . Visitor.java 
+  406  vi VisitorModel.java
+  407  javac -d . VisitorModel.java 
+  408  java app.VisitorController
+  409  vi Document.java 
+  410  javac -d . Document.java 
+  411  vi Visitor.java 
+  412  javac -d . Visitor.java 
+  413  vi VisitorModel.java 
+  414  javac -d . VisitorModel.java 
+  415  java app.VisitorController
+  416  vi ~/Documents/visitors.xml 
+  417  vi Document.java 
+  418  rm ~/Documents/visitors.xml 
+  419  javac -d . Document.java 
+  420  java app.VisitorController
+  421  rm ~/Documents/visitors.xml 
+  422  vi Document.java 
+  423  javac -d . Document.java 
+  424  java app.VisitorController
+  425  cp Document.java ~/Shared/
+  426  exit
+  427  ip addr show
+  428  ~/glassfish4/bin/asadmin start-domain
+  429  ping win2012vm
+  430  sudo vi /etc/sysconfig/network
+  431  sudo vi /etc/hosts
+  432  ip addr show
+  433  exit
+  434  exit
+  435  exit
+  436  halt
+  437  mysql -u root
+  438  cd www/html/
+  439  ls
+  440  cd jas
+  441  cd ja
+  442  cd js
+  443  clear
+  444  gedit newjs.txt 
+  445  ls
+  446  clear
+  447  gedit reg.html
+  448  ls
+  449  gedit jsfile.js 
+  450  gedit newjs.txt 
+  451  cls
+  452  clear
+  453  ls 
+  454  gedit jsfile.js 
+  455  clear
+  456  gedit reg.html
+  457  ls
+  458  gedit cssfile.css 
+  459  clear
+  460  vi money.cpp
+  461  mkdir DACFeb19
+  462  cd DACFeb19/
+  463  ll -r ~/Shared/CodingSamples/
+  464  ll ~/Shared/CodingSamples/
+  465  ll ~/Shared
+  466  ll ~/Shared/CodingSamples/
+  467  cp -r ~/Shared/CodingSamples/Foundations/
+  468  cp -r ~/Shared/CodingSamples/Foundations/ .
+  469  cp -r ~/Shared/CodingSamples/OSvijay/ .
+  470  clear
+  471  ll
+  472  cp ~/Shared/Shared/.vimrc  Foundations/C/
+  473  cleat
+  474  clear
+  475  ls
+  476  ls DACFeb19/
+  477  ls DACFeb19/Foundations/
+  478  ls DACFeb19/Foundations/C
+  479  exit
+  480  ll
+  481  cd DACFeb19/
+  482  ll
+  483  cd Foundations/
+  484  ll
+  485  cd C
+  486  ll
+  487  cd ..
+  488  exit
+  489  ll
+  490  exit
+  491  ll
+  492  ll DACFeb19/
+  493  cd DACFeb19/Foundations/
+  494  mkdir C++
+  495  cd C++
+  496  mkdir Functions
+  497  cd Functions/
+  498  vi namespacetest1.cpp
+  499  c++ -o namespacetest1 namespacetest1.cpp 
+  500  ./namespacetest1 
+  501  echo $1
+  502  ./namespacetest1 
+  503  echo $?
+  504  vi namespacetest1.cpp
+  505  c++ -o namespacetest1 namespacetest1.cpp 
+  506  echo $?
+  507  ./namespacetest1 
+  508  echo $?
+  509  vi namespacetest1.cpp
+  510  c++ -o namespacetest1 namespacetest1.cpp 
+  511  ./namespacetest1 
+  512  echo $?
+  513  vi namespacetest1.cpp
+  514  c++ -o namespacetest1 namespacetest1.cpp 
+  515  vi namespacetest1.cpp
+  516  c++ -o namespacetest1 namespacetest1.cpp 
+  517  ./namespacetest1 
+  518  echo $?
+  519  vi namespacetest1.cpp
+  520  cl
+  521  objdump -t namespacetest1
+  522  c++filt _ZN5Drama5actorE
+  523  c++filt _ZN5Drama5actor
+  524  vi people.h
+  525  vi namespacetest2.cpp
+  526  c++ -o namespacetest2 namespacetest2.cpp 
+  527  ./namespacetest2
+  528  echo $?
+  529  objdump -t namespacetest2
+  530  vi namespacetest2.cpp
+  531  c++ -o namespacetest2 namespacetest2.cpp 
+  532  ./namespacetest2
+  533  echo $?
+  534  vi namespacetest2.cpp
+  535  vi stdnamespctest.cpp
+  536  c++ -o stdnamespctest stdnamespctest.cpp 
+  537  ./stdnamespctest 
+  538  vi stdnamespctest.cpp
+  539  vi power.cpp
+  540  vi functest.cpp
+  541  c++ -c power.cpp 
+  542  vi functest.cpp
+  543  c++ -o functest functest.cpp 
+  544  vi functest.cpp
+  545  c++ -o functest functest.cpp 
+  546  c++ -o functest functest.cpp power.o
+  547  ./functest
+  548  vi functest.cpp
+  549  c++ -o functest functest.cpp power.o
+  550  vi power.cpp
+  551  objdump -t power.o
+  552  vi functest.cpp
+  553  c++ -o functest functest.cpp power.o
+  554  ./functest 
+  555  c++filt _ZN5Actor6ActionEdfPs
+  556  vi power.cpp
+  557  ll
+  558  ll ../../C/Basics/
+  559  vi ../../C/Basics/myfunc.c
+  560  cp ../../C/Basics/myfunc.o .
+  561  vi cfunctest.cpp
+  562  c++ -o cfunctest cfunctest.cpp myfunc.o 
+  563  vi cfunctest.cpp
+  564  objdump -t myfunc.o 
+  565  vi cfunctest.cpp 
+  566  c++ -o cfunctest cfunctest.cpp myfunc.o 
+  567  ./cfunctest 
+  568  vi defargtest.cpp
+  569  cp ~/Shared/.vimrc ~/
+  570  chmod a-x ~/.vimrc 
+  571  vi defargtest.cpp
+  572  vi ~/.vimrc 
+  573  vi defargtest.cpp
+  574  c++ -o defargtest defargtest.cpp 
+  575  ./defargtest 
+  576  cp defargtest.cpp funcovldtest.cpp
+  577  vi funcovldtest.cpp 
+  578  c++ -o funcovldtest funcovldtest.cpp 
+  579  vi funcovldtest.cpp 
+  580  c++ -o funcovldtest funcovldtest.cpp 
+  581  vi funcovldtest.cpp 
+  582  c++ -o funcovldtest funcovldtest.cpp 
+  583  ./funcovldtest 
+  584  vi funcovldtest.cpp 
+  585  vi reftypetest.cpp
+  586  c++ -o reftypetest reftypetest.cpp 
+  587  ./reftypetest 
+  588  vi reftypetest.cpp
+  589  c++ -o reftypetest reftypetest.cpp 
+  590  ./reftypetest 
+  591  vi reftypetest.cpp
+  592  pwd
+  593  history > cmd_21apr2019.txt
+  594  vi cmd_21apr2019.txt 
+  595  cp cmd_21apr2019.txt cmd_21apr2019_1.txt 
+  596  vi cmd_21apr2019.txt
+  597  cd ..
+  598  ll
+  599  cd C++/
+  600  ll
+  601  cd ..
+  602  cp -r C++/ ~/Shared/
+  603  exit
+  604  ll
+  605  ll DACFeb19/
+  606  cd DACFeb19/Foundations/
+  607  cd C++/Functions/
+  608  vi throwtest.cpp
+  609  c++ -o throwtest throwtest.cpp 
+  610  ./throwtest 
+  611  vi throwtest.cpp
+  612  c++ -o throwtest throwtest.cpp 
+  613  ./throwtest 
+  614  vi throwtest.cpp
+  615  c++ -o throwtest throwtest.cpp 
+  616  ./throwtest 
+  617  vi throwtest.cpp
+  618  ./throwtest 
+  619  cp throwtest.cpp catchtest1.cpp
+  620  vi catchtest1.cpp 
+  621  c++ -o catchtest1 catchtest1.cpp 
+  622  ./catchtest1
+  623  man printf
+  624  cp catchtest1.cpp catchtest2.cpp
+  625  vi catchtest2.cpp
+  626  c++ -o catchtest2 catchtest2.cpp 
+  627  vi catchtest2.cpp
+  628  c++ -o catchtest2 catchtest2.cpp 
+  629  ./catchtest2
+  630  ll *.cpp
+  631  ll
+  632  history >cmd_22apr2019.txt
+  633  vi cmd_22apr2019.txt 
+  634  cp cmd_22apr2019.txt cmd_22apr2019_1.txt 
+  635  vi cmd_22apr2019.txt
+  636  cd ..
+  637  cp -r C++/ ~/Shared/
+  638  exit
+  639  ll
+  640  cd DACFeb19/
+  641  ll
+  642  cd Foundations/
+  643  ll
+  644  cd C++
+  645  ll
+  646  cd Functions/
+  647  ll
+  648  exit
+  649  halt
+  650  ll DACFeb19/Foundations/C++/Functions/
+  651  halt
+  652  ll
+  653  ll DACFeb19/
+  654  cd DACFeb19/
+  655  cd Foundations/
+  656  cd ..
+  657  ll Foundations/
+  658  cd Foundations/
+  659  cd C++
+  660  cd Functions/
+  661  cd..
+  662  cd DACFeb19/Foundations/C++/Classes/
+  663  history >cmd_22apr2019_evening.txt
+  664  vi cmd_22apr2019_evening.txt 
+  665  history >cmd_22apr2019_evening.txt 
+  666  vi cmd_22apr2019_evening.txt 
+  667  ll
+  668  rm cmd_22apr2019_evening.txt 
+  669  cd ..
+  670  halt
+  671  cd DACFeb19/
+  672  cd Foundations/C++/Classes/
+  673  cp ctortest.cpp dtortest.cpp
+  674  vi dtortest.cpp 
+  675  c++ -o dtortest dtortest.cpp 
+  676  vi dtortest.cpp 
+  677  c++ -o dtortest dtortest.cpp 
+  678  ./dtortest 
+  679  vi dtortest.cpp 
+  680  c++ -o dtortest dtortest.cpp 
+  681  ./dtortest 
+  682  vi dtortest.cpp 
+  683  c++ -o dtortest dtortest.cpp 
+  684  ./dtortest 
+  685  vi dtortest.cpp 
+  686  c++ -o dtortest dtortest.cpp 
+  687  ./dtortest 
+  688  vi dtortest.cpp 
+  689  c++ -o dtortest dtortest.cpp 
+  690  ./dtortest 
+  691  vi dtortest.cpp 
+  692  c++ -o dtortest dtortest.cpp 
+  693  cp dtortest.cpp objreftest.cpp
+  694  vi objreftest.cpp 
+  695  c++ -o objreftest objreftest.cpp 
+  696  ./objreftest 
+  697  vi objreftest.cpp 
+  698  c++ -o objreftest objreftest.cpp 
+  699  ./objreftest 
+  700  vi objreftest.cpp 
+  701  c++ -o objreftest objreftest.cpp 
+  702  ./objreftest 
+  703  vi objreftest.cpp 
+  704  c++ -o objreftest objreftest.cpp 
+  705  vi objreftest.cpp 
+  706  c++ -o objreftest objreftest.cpp 
+  707  vi objreftest.cpp 
+  708  c++ -o objreftest objreftest.cpp 
+  709  ./objreftest 
+  710  vi objreftest.cpp 
+  711  c++filt _ZNK8Interval7GetTimeEv
+  712  vi objreftest.cpp 
+  713  c++ -o objreftest objreftest.cpp 
+  714  vi objreftest.cpp 
+  715  c++ -o objreftest objreftest.cpp 
+  716  ./objreftest 
+  717  cp classtest1.cpp newdelobjtest.cpp
+  718  vi newdelobjtest.cpp 
+  719  c++ -o newdelobjtest newdelobjtest.cpp 
+  720  vi newdelobjtest.cpp 
+  721  c++ -o newdelobjtest newdelobjtest.cpp 
+  722  vi newdelobjtest.cpp 
+  723  c++ -o newdelobjtest newdelobjtest.cpp 
+  724  ./newdelobjtest 
+  725  vi newdelobjtest.cpp 
+  726  c++ -o newdelobjtest newdelobjtest.cpp 
+  727  ./newdelobjtest 
+  728  vi newdelobjtest.cpp 
+  729  c++ -o newdelobjtest newdelobjtest.cpp 
+  730  ./newdelobjtest 
+  731  vi newdelobjtest.cpp 
+  732  c++ -o newdelobjtest newdelobjtest.cpp 
+  733  ./newdelobjtest 
+  734  history > cmd_23apr2019_1.txt
+  735  cd ..
+  736  cd C++/Classes/
+  737  vi cmd_23apr2019_1.txt 
+  738  cd ..
+  739  cp C++/ ~/Shared/
+  740  cp -r C++/ ~/Shared/
+  741  ll
+  742  halt
+  743  cd DACFeb19/Foundations/C++/Classes/
+  744  cp newdelobjtest.cpp newdelarrtest.cpp
+  745  vi newdelarrtest.cpp 
+  746  c++ -o newdelarrtest newdelarrtest.cpp 
+  747  vi newdelarrtest.cpp 
+  748  c++ -o newdelarrtest newdelarrtest.cpp 
+  749  vi newdelarrtest.cpp 
+  750  c++ -o newdelarrtest newdelarrtest.cpp 
+  751  ./newdelarrtest 
+  752  vi newdelarrtest.cpp 
+  753  c++ -o newdelarrtest newdelarrtest.cpp 
+  754  ./newdelarrtest 
+  755  vi newdelarrtest.cpp 
+  756  c++ -o newdelarrtest newdelarrtest.cpp 
+  757  ./newdelarrtest 
+  758  cp classtest2.cpp opovldtest1.cpp
+  759  vi opovldtest1.cpp 
+  760  c++ -o opovldtest1 opovldtest1.cpp 
+  761  ./opovldtest1 
+  762  vi opovldtest1.cpp 
+  763  c++ -o opovldtest1 opovldtest1.cpp 
+  764  ./opovldtest1 
+  765  vi opovldtest1.cpp 
+  766  c++ -o opovldtest1 opovldtest1.cpp 
+  767  ./opovldtest1 
+  768  vi opovldtest1.cpp 
+  769  c++ -o opovldtest1 opovldtest1.cpp 
+  770  ./opovldtest1 
+  771  vi opovldtest1.cpp 
+  772  c++ -o opovldtest1 opovldtest1.cpp 
+  773  vi opovldtest1.cpp 
+  774  c++ -o opovldtest1 opovldtest1.cpp 
+  775  vi opovldtest1.cpp 
+  776  c++ -o opovldtest1 opovldtest1.cpp 
+  777  ./opovldtest1 
+  778  vi opovldtest1.cpp 
+  779  c++ -o opovldtest1 opovldtest1.cpp 
+  780  vi opovldtest1.cpp 
+  781  c++ -o opovldtest1 opovldtest1.cpp 
+  782  ./opovldtest1 
+  783  vi opovldtest1.cpp 
+  784  c++ -o opovldtest1 opovldtest1.cpp 
+  785  ./opovldtest1 
+  786  vi opovldtest1.cpp 
+  787  c++ -o opovldtest1 opovldtest1.cpp 
+  788  ./opovldtest1 
+  789  vi opovldtest1.cpp 
+  790  cp opovldtest1.cpp opovldtest2.cpp
+  791  vi opovldtest2.cpp
+  792  c++ -o opovldtest2 opovldtest2.cpp 
+  793  ./opovldtest2
+  794  vi opovldtest2.cpp
+  795  c++ -o opovldtest2 opovldtest2.cpp 
+  796  vi opovldtest2.cpp
+  797  c++ -o opovldtest2 opovldtest2.cpp 
+  798  ./opovldtest2
+  799  cp newdelobjtest.cpp objcopytest.cpp
+  800  vi objcopytest.cpp 
+  801  c++ -o objcopytest objcopytest.cpp 
+  802  ./objcopytest 
+  803  vi objcopytest.cpp 
+  804  c++ -o objcopytest objcopytest.cpp 
+  805  ./objcopytest 
+  806  vi objcopytest.cpp 
+  807  c++ -o objcopytest objcopytest.cpp 
+  808  ./objcopytest 
+  809  vi objcopytest.cpp 
+  810  c++ -o objcopytest objcopytest.cpp 
+  811  ./objcopytest 
+  812  vi objcopytest.cpp 
+  813  c++ -o objcopytest objcopytest.cpp 
+  814  ./objcopytest 
+  815  vi objcopytest.cpp 
+  816  c++ -o objcopytest objcopytest.cpp 
+  817  ./objcopytest 
+  818  vi objcopytest.cpp 
+  819  c++ -o objcopytest objcopytest.cpp 
+  820  ./objcopytest 
+  821  history >cmd_23apr2019_2_evening.txt 
+  822  cd ..
+  823  cp -r C++/ ~/Shared/
+  824  cd ..
+  825  ll
+  826  cd..
+  827  cd ..
+  828  ll
+  829  cd Practice/
+  830  ll
+  831  cd ..
+  832  ll
+  833  cd Practice/
+  834  ll
+  835  cd C
+  836  ll
+  837  cd ..
+  838  cd Nilesh/
+  839  ll
+  840  cd ..
+  841  mkdir C++
+  842  rm C++/
+  843  rm -r C++/
+  844  pwd
+  845  cd Nilesh/
+  846  pwd
+  847  cp ../../DACFeb19/C++ .
+  848  cp -r ../../DACFeb19/C++ .
+  849  cp -r ../../DACFeb19/Foundations/C++/ .
+  850  ll
+  851  cd C++
+  852  ll
+  853  cd Classes/
+  854  clear
+  855  ll *.cpp
+  856  vi classtest1.cpp
+  857  vi classtest2.cpp
+  858  vi ctortest.cpp
+  859  vi dtortest.cpp
+  860  vi newdelarrtest.cpp
+  861  vi newdelobjtest.cpp
+  862  vi classtest1.cpp
+  863  vi classtest2.cpp
+  864  vi classtest1.cpp
+  865  vi classtest2.cpp
+  866  vi ctortest.cpp
+  867  ./ctortest 
+  868  vi ctortest.cpp
+  869  c++ ctortest ctortest.cpp
+  870  vi ctortest.cpp
+  871  c++ ctortest ctortest.cpp
+  872  vi ctortest.cpp
+  873  c++ ctortest ctortest.cpp
+  874  clear
+  875  c++ -o ctortest ctortest.cpp
+  876  ./ctortest 
+  877  vi ctortest.cpp
+  878  *.cpp
+  879  ll *.cpp
+  880  clear
+  881  vi dtortestcpp
+  882  vi dtortest.cpp
+  883  clear
+  884  c++ -o dtortest dtortest.cpp
+  885  ./dtortest 
+  886  vi dtortest.cpp
+  887  exit
+  888  ll
+  889  cd DACFeb19/
+  890  cd Pr
+  891  cd ..
+  892  cd Practice/
+  893  cd Nilesh/C++/
+  894  ll
+  895  cd Classes
+  896  ll
+  897  clear
+  898  pwd
+  899  clear
+  900  vi *.c
+  901  ll *.c
+  902  pwd
+  903  ll
+  904  ll *.c
+  905  ll *.cpp
+  906  clear
+  907  vi classtest1.cpp
+  908  exit
+  909  cd DACFeb19/Foundations/C++/
+  910  cd ..
+  911  cd C++/
+  912  cd Classes/
+  913  cp newdelobjtest.cpp objcasttest.cpp
+  914  vi objcasttest.cpp 
+  915  cp objcopytest.cpp objcasttest.cpp 
+  916  vi objcasttest.cpp 
+  917  c++ -o objcasttest objcasttest.cpp 
+  918  vi objcasttest.cpp 
+  919  c++ -o objcasttest objcasttest.cpp 
+  920  ./objcasttest 
+  921  vi objcasttest.cpp 
+  922  c++ -o objcasttest objcasttest.cpp 
+  923  ./objcasttest 
+  924  vi objcasttest.cpp 
+  925  c++ -o objcasttest objcasttest.cpp 
+  926  vi objcasttest.cpp 
+  927  c++ -o objcasttest objcasttest.cpp 
+  928  ./objcasttest 
+  929  vi objcasttest.cpp 
+  930  c++ -o objcasttest objcasttest.cpp 
+  931  vi objcasttest.cpp 
+  932  c++ -o objcasttest objcasttest.cpp 
+  933  vi objcasttest.cpp 
+  934  c++ -o objcasttest objcasttest.cpp 
+  935  ./objcasttest 
+  936  vi objcasttest.cpp 
+  937  c++ -o objcasttest objcasttest.cpp 
+  938  vi objcasttest.cpp 
+  939  c++ -o objcasttest objcasttest.cpp 
+  940  vi objcasttest.cpp 
+  941  c++ -o objcasttest objcasttest.cpp 
+  942  vi objcasttest.cpp 
+  943  c++ -o objcasttest objcasttest.cpp 
+  944  ./objcasttest 
+  945  cd ..
+  946  mkdir Inheritance
+  947  cd Inheritance/
+  948  vi payroll1.h
+  949  vi derivedclasstest.cpp
+  950  c++ -o derivedclasstest derivedclasstest.cpp 
+  951  ./derivedclasstest 
+  952  vi derivedclasstest.cpp
+  953  vi payroll1.h
+  954  c++ -o derivedclasstest derivedclasstest.cpp 
+  955  ./derivedclasstest 
+  956  vi payroll1.h
+  957  c++ -o derivedclasstest derivedclasstest.cpp 
+  958  vi payroll1.h
+  959  c++ -o derivedclasstest derivedclasstest.cpp 
+  960  vi payroll1.h
+  961  c++ -o derivedclasstest derivedclasstest.cpp 
+  962  ./derivedclasstest 
+  963  vi payroll1.h
+  964  c++ -o derivedclasstest derivedclasstest.cpp 
+  965  ./derivedclasstest 
+  966  vi derivedclasstest.cpp
+  967  c++ -o derivedclasstest derivedclasstest.cpp 
+  968  ./derivedclasstest 
+  969  vi derivedclasstest.cpp
+  970  vi payroll1.h 
+  971  cp payroll1.h payroll2.h 
+  972  vi payroll2.h 
+  973  cp derivedclasstest.cpp virtfunctest.cpp
+  974  vi virtfunctest.cpp 
+  975  c++ -o virtfunctest virtfunctest.cpp 
+  976  ./virtfunctest 
+  977  vi virtfunctest.cpp 
+  978  vi payroll2.h 
+  979  vi virtfunctest.cpp
+  980  ll *.c
+  981  ll *.cpp
+  982  ll
+  983  history >cmd_24apr2019_1.txt
+  984  cd ..
+  985  cp -r C++/ ~/Shared/
+  986  halt
+  987  cd DACFeb19/Foundations/C++/Inheritance/
+  988  vi virtdtortest.cpp
+  989  c++ -o virtdtortest virtdtortest.cpp 
+  990  ./virtdtortest 
+  991  vi virtdtortest.cpp
+  992  vi payroll2.h 
+  993  c++ -o virtdtortest virtdtortest.cpp 
+  994  ./virtdtortest 
+  995  vi virtdtortest.cpp
+  996  c++ -o virtdtortest virtdtortest.cpp 
+  997  vi virtdtortest.cpp
+  998  c++ -o virtdtortest virtdtortest.cpp 
+  999  ./virtdtortest 
+ 1000  cp virtdtortest.cpp rttitest.cpp
+ 1001  vi rttitest.cpp 
+ 1002  c++ -o rttitest rttitest.cpp 
+ 1003  vi rttitest.cpp 
+ 1004  c++ -o rttitest rttitest.cpp 
+ 1005  vi rttitest.cpp 
+ 1006  c++ -o rttitest rttitest.cpp 
+ 1007  ./rttitest 
+ 1008  vi rttitest.cpp 
+ 1009  c++ -o rttitest rttitest.cpp 
+ 1010  ./rttitest 
+ 1011  vi rttitest.cpp 
+ 1012  vi banking.h
+ 1013  vi banking.cpp
+ 1014  vi banking.h
+ 1015  vi banking.cpp
+ 1016  c++ -c banking.cpp 
+ 1017  vi banking.h
+ 1018  vi banking.cpp
+ 1019  c++ -c banking.cpp 
+ 1020  vi banking.cpp
+ 1021  c++ -c banking.cpp 
+ 1022  vi payroll1.h
+ 1023  vi payroll2.h
+ 1024  vi ../Classes/opovldtest2.cpp 
+ 1025  history >cmd_24apr2019_2_evening.txt 
