@@ -819,3 +819,165 @@
   819  c++ -o objcopytest objcopytest.cpp 
   820  ./objcopytest 
   821  history >cmd_23apr2019_2_evening.txt 
+  822  cd ..
+  823  cp -r C++/ ~/Shared/
+  824  cd ..
+  825  ll
+  826  cd..
+  827  cd ..
+  828  ll
+  829  cd Practice/
+  830  ll
+  831  cd ..
+  832  ll
+  833  cd Practice/
+  834  ll
+  835  cd C
+  836  ll
+  837  cd ..
+  838  cd Nilesh/
+  839  ll
+  840  cd ..
+  841  mkdir C++
+  842  rm C++/
+  843  rm -r C++/
+  844  pwd
+  845  cd Nilesh/
+  846  pwd
+  847  cp ../../DACFeb19/C++ .
+  848  cp -r ../../DACFeb19/C++ .
+  849  cp -r ../../DACFeb19/Foundations/C++/ .
+  850  ll
+  851  cd C++
+  852  ll
+  853  cd Classes/
+  854  clear
+  855  ll *.cpp
+  856  vi classtest1.cpp
+  857  vi classtest2.cpp
+  858  vi ctortest.cpp
+  859  vi dtortest.cpp
+  860  vi newdelarrtest.cpp
+  861  vi newdelobjtest.cpp
+  862  vi classtest1.cpp
+  863  vi classtest2.cpp
+  864  vi classtest1.cpp
+  865  vi classtest2.cpp
+  866  vi ctortest.cpp
+  867  ./ctortest 
+  868  vi ctortest.cpp
+  869  c++ ctortest ctortest.cpp
+  870  vi ctortest.cpp
+  871  c++ ctortest ctortest.cpp
+  872  vi ctortest.cpp
+  873  c++ ctortest ctortest.cpp
+  874  clear
+  875  c++ -o ctortest ctortest.cpp
+  876  ./ctortest 
+  877  vi ctortest.cpp
+  878  *.cpp
+  879  ll *.cpp
+  880  clear
+  881  vi dtortestcpp
+  882  vi dtortest.cpp
+  883  clear
+  884  c++ -o dtortest dtortest.cpp
+  885  ./dtortest 
+  886  vi dtortest.cpp
+  887  exit
+  888  ll
+  889  cd DACFeb19/
+  890  cd Pr
+  891  cd ..
+  892  cd Practice/
+  893  cd Nilesh/C++/
+  894  ll
+  895  cd Classes
+  896  ll
+  897  clear
+  898  pwd
+  899  clear
+  900  vi *.c
+  901  ll *.c
+  902  pwd
+  903  ll
+  904  ll *.c
+  905  ll *.cpp
+  906  clear
+  907  vi classtest1.cpp
+  908  exit
+  909  cd DACFeb19/Foundations/C++/
+  910  cd ..
+  911  cd C++/
+  912  cd Classes/
+  913  cp newdelobjtest.cpp objcasttest.cpp
+  914  vi objcasttest.cpp 
+  915  cp objcopytest.cpp objcasttest.cpp 
+  916  vi objcasttest.cpp 
+  917  c++ -o objcasttest objcasttest.cpp 
+  918  vi objcasttest.cpp 
+  919  c++ -o objcasttest objcasttest.cpp 
+  920  ./objcasttest 
+  921  vi objcasttest.cpp 
+  922  c++ -o objcasttest objcasttest.cpp 
+  923  ./objcasttest 
+  924  vi objcasttest.cpp 
+  925  c++ -o objcasttest objcasttest.cpp 
+  926  vi objcasttest.cpp 
+  927  c++ -o objcasttest objcasttest.cpp 
+  928  ./objcasttest 
+  929  vi objcasttest.cpp 
+  930  c++ -o objcasttest objcasttest.cpp 
+  931  vi objcasttest.cpp 
+  932  c++ -o objcasttest objcasttest.cpp 
+  933  vi objcasttest.cpp 
+  934  c++ -o objcasttest objcasttest.cpp 
+  935  ./objcasttest 
+  936  vi objcasttest.cpp 
+  937  c++ -o objcasttest objcasttest.cpp 
+  938  vi objcasttest.cpp 
+  939  c++ -o objcasttest objcasttest.cpp 
+  940  vi objcasttest.cpp 
+  941  c++ -o objcasttest objcasttest.cpp 
+  942  vi objcasttest.cpp 
+  943  c++ -o objcasttest objcasttest.cpp 
+  944  ./objcasttest 
+  945  cd ..
+  946  mkdir Inheritance
+  947  cd Inheritance/
+  948  vi payroll1.h
+  949  vi derivedclasstest.cpp
+  950  c++ -o derivedclasstest derivedclasstest.cpp 
+  951  ./derivedclasstest 
+  952  vi derivedclasstest.cpp
+  953  vi payroll1.h
+  954  c++ -o derivedclasstest derivedclasstest.cpp 
+  955  ./derivedclasstest 
+  956  vi payroll1.h
+  957  c++ -o derivedclasstest derivedclasstest.cpp 
+  958  vi payroll1.h
+  959  c++ -o derivedclasstest derivedclasstest.cpp 
+  960  vi payroll1.h
+  961  c++ -o derivedclasstest derivedclasstest.cpp 
+  962  ./derivedclasstest 
+  963  vi payroll1.h
+  964  c++ -o derivedclasstest derivedclasstest.cpp 
+  965  ./derivedclasstest 
+  966  vi derivedclasstest.cpp
+  967  c++ -o derivedclasstest derivedclasstest.cpp 
+  968  ./derivedclasstest 
+  969  vi derivedclasstest.cpp
+  970  vi payroll1.h 
+  971  cp payroll1.h payroll2.h 
+  972  vi payroll2.h 
+  973  cp derivedclasstest.cpp virtfunctest.cpp
+  974  vi virtfunctest.cpp 
+  975  c++ -o virtfunctest virtfunctest.cpp 
+  976  ./virtfunctest 
+  977  vi virtfunctest.cpp 
+  978  vi payroll2.h 
+  979  vi virtfunctest.cpp
+  980  ll *.c
+  981  ll *.cpp
+  982  ll
+  983  history >cmd_24apr2019_1.txt
