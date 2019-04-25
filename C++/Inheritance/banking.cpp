@@ -37,9 +37,9 @@ namespace Banking
 		}
 	};
 
-	class SavingsAccount : public Account
+	class SavingsAccount : public Account, public Profitable
 	{
-	public:
+	public: 
 		SavingsAccount()
 		{
 			balance = 5000;
@@ -55,6 +55,12 @@ namespace Banking
 			if(balance - amount < 5000)
 				throw InsufficientFunds();
 			balance -= amount;
+		}
+
+		double GetInterest(short period) const
+		{
+			float rate = balance < 15000 ? 4 : 5;
+			return balance * period * rate / 100;
 		}
 	};
 

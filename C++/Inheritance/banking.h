@@ -16,6 +16,13 @@ namespace Banking
 	protected:
 		double balance;
 	};
+	
+	class Profitable
+	{
+	public:
+		virtual double GetInterest(short) const = 0;
+		virtual ~Profitable(){}
+	};
 
 	//factory functions
 	Account* OpenCurrentAccount();
