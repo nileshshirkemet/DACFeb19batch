@@ -1,0 +1,131 @@
+  951  mkdir Templates
+  952  cd Templates/
+  953  vi functmplttest1.cpp
+  954  c++ -o functmplttest1 functmplttest1.cpp 
+  955  ./functmplttest1 
+  956  vi functmplttest1.cpp
+  957  c++ -o functmplttest1 functmplttest1.cpp 
+  958  vi functmplttest1.cpp
+  959  c++ -o functmplttest1 functmplttest1.cpp 
+  960  ./functmplttest1 
+  961  vi functmplttest1.cpp
+  962  c++ -o functmplttest1 functmplttest1.cpp 
+  963  ./functmplttest1 
+  964  objdump -t functmplttest1
+  965  vi functmplttest1.cpp
+  966  vi functmplttest2.cpp
+  967  c++ -o functmplttest2 functmplttest2.cpp 
+  968  ./functmplttest2
+  969  vi functmplttest2.cpp
+  970  c++ -o functmplttest2 functmplttest2.cpp 
+  971  ./functmplttest2
+  972  vi functmplttest2.cpp
+  973  c++ -o functmplttest2 functmplttest2.cpp 
+  974  ./functmplttest2
+  975  vi functmplttest2.cpp
+  976  vi classtmplttest1.cpp
+  977  c++ -o classtmplttest1 classtmplttest1.cpp 
+  978  ./classtmplttest1 
+  979  cp classtmplttest1.cpp classtmplttestplttest2.cpp
+  980  vi classtmplttest2.cpp 
+  981  c++ -o classtmplttest2 classtmplttest2.cpp 
+  982  vi classtmplttest2.cpp 
+  983  c++ -o classtmplttest2 classtmplttest2.cpp 
+  984  vi classtmplttest2.cpp 
+  985  c++ -o classtmplttest2 classtmplttest2.cpp 
+  986  vi classtmplttest2.cpp 
+  987  c++ -o classtmplttest2 classtmplttest2.cpp 
+  988  vi classtmplttest2.cpp 
+  989  c++ -o classtmplttest2 classtmplttest2.cpp 
+  990  ./classtmplttest2
+  991  cp classtmplttest2.cpp classtmplttest3.cpp
+  992  vi classtmplttest3.cpp 
+  993  c++ -o classtmplttest3 classtmplttest3.cpp 
+  994  ./classtmplttest3
+  995  vi classtmplttest2.cpp 
+  996  vi classtmplttest3.cpp 
+  997  exit
+  998  cd DACFeb19/Foundations/C++/Templates/
+  999  vi interval.h
+ 1000  vi vectortest1.cpp
+ 1001  c++ -o vectortest1 vectortest1.cpp 
+ 1002  ./vectortest1 
+ 1003  cp vectortest1.cpp vectortest2.cpp
+ 1004  vi vectortest2.cpp 
+ 1005  c++ -o vectortest2 vectortest2.cpp 
+ 1006  ./vectortest2
+ 1007  cp vectortest2.cpp listtest.cpp
+ 1008  vi listtest.cpp 
+ 1009  c++ -o listtest listtest.cpp 
+ 1010  ./listtest 
+ 1011  vi listtest.cpp 
+ 1012  c++ -o listtest listtest.cpp 
+ 1013  ./listtest 
+ 1014  cp listtest.cpp dequetest.cpp
+ 1015  vi dequetest.cpp 
+ 1016  c++ -o dequetest dequetest.cpp 
+ 1017  ./dequetest 
+ 1018  cp vectortest2.cpp settest.cpp
+ 1019  vi settest.cpp 
+ 1020  c++ -o settest settest.cpp 
+ 1021  ./settest 
+ 1022  vi settest.cpp 
+ 1023  c++ -o settest settest.cpp 
+ 1024  vi settest.cpp 
+ 1025  c++ -o settest settest.cpp 
+ 1026  ./settest 
+ 1027  cp settest.cpp maptest.cpp
+ 1028  vi maptest.cpp 
+ 1029  c++ -o maptest maptest.cpp 
+ 1030  ./maptest 
+ 1031  vi maptest.cpp 
+ 1032  c++ -o maptest maptest.cpp 
+ 1033  ./maptest 
+ 1034  vi stacktest.cpp
+ 1035  c++ -o stacktest stacktest.cpp 
+ 1036  ./stacktest 
+ 1037  vi stacktest.cpp
+ 1038  c++ -o stacktest stacktest.cpp 
+ 1039  ./stacktest 
+ 1040  cp stacktest.cpp queuetest.cpp
+ 1041  vi queuetest.cpp 
+ 1042  c++ -o queuetest queuetest.cpp 
+ 1043  ./queuetest 
+ 1044  vi queuetest.cpp 
+ 1045  c++ -o queuetest queuetest.cpp 
+ 1046  ./queuetest 
+ 1047  cp stacktest.cpp priorityquetest.cpp
+ 1048  vi priorityquetest.cpp 
+ 1049  c++ -o priorityquetest priorityquetest.cpp 
+ 1050  ./priorityquetest 
+ 1051  vi priorityquetest.cpp 
+ 1052  c++ -o priorityquetest priorityquetest.cpp 
+ 1053  vi priorityquetest.cpp 
+ 1054  c++ -o priorityquetest priorityquetest.cpp 
+ 1055  vi priorityquetest.cpp 
+ 1056  c++ -o priorityquetest priorityquetest.cpp 
+ 1057  ./priorityquetest 
+ 1058  cp vectortest2.cpp sorttest.cpp
+ 1059  vi sorttest.cpp 
+ 1060  c++ -o sorttest sorttest.cpp 
+ 1061  ./sorttest 
+ 1062  vi sorttest.cpp 
+ 1063  c++ -o sorttest sorttest.cpp 
+ 1064  ./sorttest 
+ 1065  cp listtest.cpp copytest.cpp
+ 1066  vi copytest.cpp 
+ 1067  c++ -o copytest copytest.cpp 
+ 1068  vi copytest.cpp 
+ 1069  c++ -o copytest copytest.cpp 
+ 1070* 
+ 1071  cd ..
+ 1072  cd Templates/
+ 1073  cd ..
+ 1074  cd Functions/
+ 1075  ll
+ 1076  :q
+ 1077  cd ..
+ 1078  ll
+ 1079  cd Templates/
+ 1080  history > cmd_25apr_2019.txt
+ 1081  history > cmd_26apr_2019.txt
