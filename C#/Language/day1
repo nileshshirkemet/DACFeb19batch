@@ -1,0 +1,54 @@
+doskey /h >filename
+doskey /h >filename.txt
+notepad filename.txt
+clear
+cls
+dir
+md MS.NET
+cd MS.NET
+md Fundamentals\Language
+cd Fundamentals\Language
+notepad hello1.il
+ilasm hello1.il
+dir
+hello1
+ilasm hello1.il
+hello1
+ilasm hello1.il
+hello1
+np hello2.vb
+notepad hello2.vb
+vbc hello2.vb
+dir
+hello2
+vbc hello2.vb
+hello2
+notepad hello3.cs
+csc hello3.cs
+dir
+hello3
+ildasm hello2.exe
+ildasm hello3.exe
+notepad greeting.cs
+csc greeting.cs
+csc greeting.cs /target:library
+dir
+notepad greetapp.vb
+vbc greetapp.vb
+vbc greetapp.vb /reference:greeting.dll
+greetapp.exe
+md Basics
+cd Basics
+subst s: .
+s:
+notepad paramarraytest.cs
+csc paramarraytest.cs
+paramarraytest.exe
+csc paramarraytest.cs
+paramarraytest.exe
+csc paramarraytest.cs
+paramarraytest.exe
+e:
+cd ..\
+ildasm greeting.dll
+doskey /h>day1
