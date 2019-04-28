@@ -1,0 +1,56 @@
+notepad propertytest1.cs
+csc propertytest1.cs
+propertytest1.exe
+notepad propertytest2.cs
+csc propertytest2.cs
+propertytest2.exe
+csc propertytest2.cs
+propertytest2.exe
+csc propertytest2.cs
+propertytest2.exe
+csc propertytest2.cs
+propertytest2.exe
+notepad opovldtest.cs
+csc opovldtest.cs
+opovldtest.exe
+csc opovldtest.cs
+opovldtest.exe
+csc opovldtest.cs
+opovldtest.exe
+csc opovldtest.cs
+opovldtest.exe
+csc opovldtest.cs
+opovldtest.exe
+csc opovldtest.cs
+opovldtest.exe
+csc opovldtest.cs
+opovldtest.exe
+csc opovldtest.cs
+opovldtest.exe
+cd ..
+md OOP
+cd OOP
+notepad payroll.cs
+dir 
+delete payroll.cs
+del payroll.cs
+notepad payroll1.cs
+csc payroll1.cs /t:library
+dir
+notepad derivedclasstest1.cs
+csc derivedclasstest1.cs
+csc derivedclasstest1.cs /r:payroll1.dll
+derivedclasstest1.exe
+csc derivedclasstest1.cs /r:payroll1.dll
+derivedclasstest1.exe
+copy payroll1.cs payroll2.cs
+notepad payroll2.cs
+csc payroll2.cs /t:library
+csc derivedclasstest1.cs /r:payroll2.dll
+derivedclasstest1.exe
+csc payroll2.cs /t:library
+csc derivedclasstest1.cs /r:payroll2.dll
+derivedclasstest1.exe
+csc payroll2.cs /t:library
+ildasm payroll2.dll
+doskey /h >cmd_28apr_2019_evening.txt
