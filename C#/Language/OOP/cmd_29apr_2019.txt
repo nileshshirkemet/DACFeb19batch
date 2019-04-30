@@ -1,0 +1,62 @@
+cd MS.NET\Fundamentals\Language
+subst s: .
+s:
+cd OOP
+notepad derivedclasstest2.cs
+ildasm payroll2.dll
+csc derivedclasstest1.cs /r:payroll2.dll 
+csc derivedclasstest2.cs /r:payroll2.dll
+derivedclasstest2.exe
+csc derivedclasstest2.cs /r:payroll2.dll
+derivedclasstest2.exe
+csc derivedclasstest2.cs /r:payroll2.dll
+derivedclasstest2.exe
+csc derivedclasstest2.cs /r:payroll2.dll
+derivedclasstest2.exe
+csc derivedclasstest2.cs payroll2.cs
+derivedclasstest2.exe
+del payroll2.dll
+derivedclasstest2.exe
+derivedclasstest1.exe
+csc payroll1.cs /t:library
+derivedclasstest1.exe
+csc payroll2.cs /t:library
+derivedclasstest1.exe
+ildasm derivedclasstest1.exe
+ildasm derivedclasstest2.exe
+copy ..\Basics\opovldtest.cs interval.cs
+notepad interval.cs
+notepad objequalitytest.cs
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+ildasm c:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+notepad banking.cs
+csc banking.cs /t:library
+notepad abstractclasstest.cs
+csc abstractclasstest.cs /r:banking.dll
+abstractclasstest.exe 6000
+abstractclasstest.exe 8000
+abstractclasstest.exe 16000
+abstractclasstest.exe 
+abstractclasstest.exe million
+csc banking.cs /t:library
+notepad interfacetest.cs
+csc interfacetest.cs /r:banking.dll
+interfacetest.exe
+csc interfacetest.cs /r:banking.dll
+interfacetest.exe
+csc interfacetest.cs /r:banking.dll
+interfacetest.exe
+doskey /h >cmd_29apr_2019.txt

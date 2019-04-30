@@ -1,0 +1,24 @@
+cd MS.NET\Fundamentals\Language
+subst s: .
+s:
+cd OOP
+notepad delegatetest.cs
+csc delegatetest.cs 
+delegatetest.exe
+csc delegatetest.cs 
+delegatetest.exe
+csc delegatetest.cs 
+delegatetest.exe
+csc delegatetest.cs 
+ildasm delegatetest.exe
+csc delegatetest.cs 
+delegatetest.exe
+copy delegatetest.cs lambdatest.cs
+notepad lambdatest.cs
+csc lambdatest.cs
+lambdatest.exe
+csc lambdatest.cs
+lambdatest.exe
+dir
+notepad cmd_29apr_2019.txt
+doskey /h >cmd_30apr_2019.txt
