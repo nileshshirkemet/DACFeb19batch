@@ -1,0 +1,77 @@
+cd MS.NET\Fundamentals
+md Generics
+cd Generics
+subst s: .
+s:
+md Basics
+cd Basics
+notepad autoboxtest.cs
+csc autoboxtest.cs
+ildasm autoboxtest.exe
+csc autoboxtest.cs
+ildasm autoboxtest.exe
+csc autoboxtest.cs
+autoboxtest.exe -5
+autoboxtest.exe 7
+csc autoboxtest.cs
+autoboxtest.exe -5
+autoboxtest.exe 7
+csc autoboxtest.cs
+autoboxtest.exe -5
+autoboxtest.exe 7
+ildasm autoboxtest.exe
+csc autoboxtest.cs
+autoboxtest.exe -5
+autoboxtest.exe 7
+copy e:\MS.NET\Fundamentals\Language\OOP\interval.cs
+copy autoboxtest.cs genmethodtest.cs
+notepad genmethodtest.cs
+csc genmethodtest.cs
+ildasm genmethodtest.exe
+copy genmethodtest.cs constrainttest.cs
+notepad constrainttest.cs
+csc constrainttest.cs
+constrainttest.exe
+csc constrainttest.cs interval.cs
+notepad interval.cs
+csc constrainttest.cs interval.cs
+constrainttest.exe
+notepad gentypetest.cs
+csc gentypetest.cs
+gentypetest.exe
+csc gentypetest.cs
+gentypetest.exe
+csc gentypetest.cs
+csc gentypetest.cs interval.cs
+gentypetest.exe
+csc gentypetest.cs interval.cs
+gentypetest.exe
+copy gentypetest.cs variancetest.cs
+notepad variancetest.cs
+csc variancetest.cs
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+variancetest.exe
+notepad nullvaltypetest.cs
+csc nullvaltypetest.cs
+nullvaltypetest.exe john
+nullvaltypetest.exe jeff
+copy gentypetest.cs iterationtest.cs
+notepad iterationtest.cs
+csc iterationtest.cs
+csc iterationtest.cs interval.cs
+iterationtest.exe
+csc iterationtest.cs interval.cs
+iterationtest.exe
+ildasm iterationtest.exe
+doskey /h cmd_01May2019.txt
+notepad cmd_01May2019.txt
+dir
+cd ..
+cd Basics
+doskey /h >cmd_01May2019.txt
