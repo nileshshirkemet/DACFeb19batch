@@ -1,0 +1,45 @@
+cd MS.NET\Fundamentals\Generics\Collections
+subst s: .
+s:
+cd ..
+e:
+subst /d s:
+cd..
+subst s: .
+s:
+cd Collections
+notepad linqtest1.cs
+csc linqtest1.cs 
+linqtest1.exe
+notepad linqtest2.cs
+csc linqtest2.cs interval.cs
+linqtest2.exe
+linqtest2.exe 250
+linqtest2.exe 300
+csc linqtest2.cs interval.cs
+cd ..
+e:
+subst /d s:
+cd ..
+md Runtime
+subst s: .
+subst /d s:
+cd Runtime
+subst s: .
+s:
+md Reflection
+cd Reflection
+copy e:\MS.NET\Fundamentals\Language\OOP\interval.cs
+copy e:\MS.NET\Fundamentals\Language\OOP\payroll2.cs payroll.cs
+csc payroll.cs /t:library
+notepad interval.cs
+notepad objaccesstest.cs
+csc objaccesstest.cs interval.cs
+objaccesstest.exe
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+doskey /h>cmd_evening_02May_2019
