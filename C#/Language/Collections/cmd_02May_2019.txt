@@ -1,0 +1,56 @@
+cd MS.NET\Fundamentals\Generics
+subst s: .
+s:
+cd Basics
+cd ..
+md Collections
+cd Collections
+copy ..\Basics\interval.cs
+notepad listtest.cs
+csc listtest.cs interval.cs
+listtest.exe
+copy listtest.cs settest1.cs
+notepad settest1.cs
+csc settest1.cs interval.cs
+settest1.exe
+copy settest1.cs settest2.cs
+notepad settest2.cs
+csc settest2.cs interval.cs
+settest2.exe
+notepad interval.cs
+csc settest2.cs interval.cs
+settest2.exe
+csc settest2.cs interval.cs
+settest2.exe
+csc settest2.cs interval.cs
+settest2.exe
+copy listtest.cs dictionarytest1.cs
+notepad dictionarytest1.cs
+csc dictionarytest1.cs interval.cs
+dictionarytest1.exe
+csc dictionarytest1.cs interval.cs
+dictionarytest1.exe tuesday 
+dictionarytest1.exe sunday 
+csc dictionarytest1.cs interval.cs
+dictionarytest1.exe  
+copy dictionarytest1.cs dictionarytest2.cs
+notepad dictionarytest2.cs
+csc dictionarytest2.cs interval.cs
+dictionarytest2.exe monday
+dictionarytest2.exe sunday
+dictionarytest2.exe 
+csc dictionarytest1.cs interval.cs
+csc dictionarytest2.cs interval.cs
+dictionarytest2.exe monday
+dictionarytest2.exe sunday
+copy dictionarytest2.cs dictionarytest3.cs
+notepad dictionarytest3.cs
+csc dictionarytest3.cs interval.cs
+dictionarytest3.exe tuesday
+dictionarytest3.exe sunday
+dictionarytest3.exe 
+csc dictionarytest3.cs interval.cs
+dictionarytest3.exe tuesday
+dictionarytest3.exe sunday
+dictionarytest3.exe 
+doskey /h > cmd_02May_2019.txt
