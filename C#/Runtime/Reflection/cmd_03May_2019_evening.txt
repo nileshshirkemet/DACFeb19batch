@@ -1,0 +1,85 @@
+cd MS.NET\Fundamentals\Runtime
+subst s: .
+s:
+cd Reflection
+notepad simplefin.cs
+csc simplefin.cs /t:library
+notepad earlybindtest.cs
+notepad simplefin.cs
+csc earlybindtest.cs /r:simplefin.dll
+earlybindtest.exe 500000
+earlybindtest.exe 500000 Finance.HomeLoan,simplefin
+earlybindtest.exe 500000 Finance.EducationLoan,simplefin
+earlybindtest.exe 500000 Finance.BusinessLoan,simplefin
+copy earlybindtest.cs latebindtest.cs
+notepad latebindtest.cs
+csc latebindtest.cs 
+latebindtest.exe 500000 Finance.EducationLoan,simplefin GetInterestRate
+latebindtest.exe 500000 Finance.PersonalLoan,simplefin GetInterestRate
+latebindtest.exe 500000 Finance.PersonalLoan,simplefin GetInterestRateForEmployees
+latebindtest.exe 500000 Finance.BusinessLoan,simplefin RateOfInterest
+copy simplefin.cs attribfin.cs
+notepad attribfin.cs
+csc attribfin.cs /t:library
+ildasm attribfin.dll
+csc attribfin.cs /t:library
+ildasm attribfin.dll
+copy earlybindtest.cs custattribtest.cs
+notepad custattribtest.cs
+csc custattribtest.cs /r:attribfin.dll
+custattribtest.exe 500000 Finance.BusinessLoan,attribfin
+custattribtest.exe 500000 Finance.HomeLoan,attribfin
+ildasm attribfin.dll
+csc custattribtest.cs /r:attribfin.dll
+custattribtest.exe 500000 Finance.BusinessLoan,attribfin
+custattribtest.exe 500000 Finance.HomeLoan,attribfin
+custattribtest.exe 500000
+custattribtest.exe 500000 Finance.EducationLoan,attribfin
+csc custattribtest.cs /r:attribfin.dll
+custattribtest.exe 500000 Finance.HomeLoan,attribfin
+doskey /h>cmd_03May_2019_evening.txt
+cd ..
+cd Reflection
+objaccesstest.exe
+ildasm objaccesstest.exe
+del payroll.dll
+objaccesstest.exe
+csc /t:library payroll.cs
+gacutil /i payroll.dll
+notepad payroll.cs
+sn -k met.keys
+csc /keyfile:met.keys payroll.cs /t:library
+csc objaccesstest.cs interval.cs /r:payroll.dll
+sn -T payroll.dll
+ildasm objaccesstest.exe
+objaccesstest.exe
+gacutil /i payroll.dll
+del payroll.dll
+objaccesstest.exe
+ildasm objaccesstest.exe
+gacutil /u payroll
+objaccesstest.exe
+notepad asmloadtest.cs
+csc asmloadtest.cs 
+asmloadtest.exe
+copy asmloadtest.cs appdomaintest.cs
+notepad appdomaintest.cs
+csc appdomaintest.cs
+appdomaintest.exe
+csc appdomaintest.cs
+appdomaintest.exe
+notepad greeters.js
+jsc greeters.js /t:library
+jsc /t:library greeters.js
+dir
+notepad dynamictest.cs
+csc dynamictest.cs
+dynamictest.exe CasualGreeter
+dynamictest.exe FormalGreeter
+dynamictest.exe HouseGreeter
+csc dynamictest.cs
+dynamictest.exe CasualGreeter
+csc dynamictest.cs
+dynamictest.exe CasualGreeter
+csc dynamictest.cs
+doskey /h > cmd_03May_2019_evening_1.txt
