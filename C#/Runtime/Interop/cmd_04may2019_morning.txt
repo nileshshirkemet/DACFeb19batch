@@ -1,0 +1,38 @@
+cd MS.NET\Fundamentals\Runtime
+subst s: .
+s:
+cd Reflection
+cd ..
+md Interop
+cd Interop
+cd legacy
+dir
+x86\setup.bat
+cd ..
+notepad legacy\x86\squaring.c
+notepad ptrtypetest.cs
+notepad legacy\x86\squaring.c
+csc ptrtypetest.cs
+csc /unsafe ptrtypetest.cs
+ptrtypetest.exe 5
+ptrtypetest.exe 15
+ptrtypetest.exe 25
+csc /unsafe ptrtypetest.cs
+ptrtypetest.exe 5
+ptrtypetest.exe 15
+ptrtypetest.exe 25
+notepad legacy\include\box.h
+notepad ijwbox.cpp
+cl /CLR /LD ijwbox.cpp legacy\x86\box.obj
+dir
+notepad mixmodeasmtest.cs
+csc mixmodeasmtest.cs /r:ijwbox.dll
+mixmodeasmtest.exe
+csc /platform:x86 mixmodeasmtest.cs /r:ijwbox.dll
+mixmodeasmtest.exe
+csc /?
+csc /platform:anycpu32bitpreferred mixmodeasmtest.cs /r:ijwbox.dll
+mixmodeasmtest.exe
+doskey /h cmd_04may2019_morning.txt
+dir
+doskey /h >cmd_04may2019_morning.txt

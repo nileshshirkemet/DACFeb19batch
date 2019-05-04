@@ -1,0 +1,36 @@
+import "oaidl.idl";
+
+[uuid(B7DF16F3-095A-412C-8347-A7EB727297B8), object]
+interface IEquation : IUnknown
+{
+	HRESULT HasRealRoots([in] double a, [in] double b, [in] double c, [out, retval] int* result);
+	HRESULT Solve([in] double a, [in] double b, [in] double c, [out] double* root1, [out] double* root2);
+};
+
+
+[uuid(513BF2C1-4935-4535-BBA1-64786C8F6FC9), helpstring("Quadratic equation library")]
+library QuadEq
+{
+	importlib("stdole32.tlb");
+
+	[uuid(204961C4-291C-4698-A77F-BFA2250778C6)]
+	coclass QuadraticEquation
+	{
+		[default] interface IEquation;
+	};
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+

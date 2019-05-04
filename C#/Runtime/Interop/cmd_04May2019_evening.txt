@@ -1,0 +1,66 @@
+cd MS.NET\Fundamentals\Runtime
+subst s: .
+s:
+cd Reflection
+cd ..
+md Interop
+cd Interop
+cd legacy
+dir
+x86\setup.bat
+cd ..
+notepad legacy\x86\squaring.c
+notepad ptrtypetest.cs
+notepad legacy\x86\squaring.c
+csc ptrtypetest.cs
+csc /unsafe ptrtypetest.cs
+ptrtypetest.exe 5
+ptrtypetest.exe 15
+ptrtypetest.exe 25
+csc /unsafe ptrtypetest.cs
+ptrtypetest.exe 5
+ptrtypetest.exe 15
+ptrtypetest.exe 25
+notepad legacy\include\box.h
+notepad ijwbox.cpp
+cl /CLR /LD ijwbox.cpp legacy\x86\box.obj
+dir
+notepad mixmodeasmtest.cs
+csc mixmodeasmtest.cs /r:ijwbox.dll
+mixmodeasmtest.exe
+csc /platform:x86 mixmodeasmtest.cs /r:ijwbox.dll
+mixmodeasmtest.exe
+csc /?
+csc /platform:anycpu32bitpreferred mixmodeasmtest.cs /r:ijwbox.dll
+mixmodeasmtest.exe
+doskey /h cmd_04may2019_morning.txt
+dir
+doskey /h >cmd_04may2019_morning.txt
+notepad legacy\include\asset.h
+dumpbin /exports legacy\x86\asset.dll
+notepad pinvoketest1.cs
+notepad legacy\include\hashenc.h
+csc pinvoketest1.cs 
+pinvoketest1.exe
+cls
+csc /platform:x86 pinvoketest1.cs
+pinvoketest1.exe
+csc /platform:x86 pinvoketest1.cs
+pinvoketest1.exe
+notepad legacy\include\hashenc.h
+copy pinvoketest1.cs pinvoketest2.cs
+notepad pinvoketest2.cs
+csc /platform:x86 pinvoketest2.cs
+pinvoketest2.exe
+csc /platform:x86 pinvoketest2.cs
+pinvoketest2.exe
+notepad legacy\include\invest.h
+copy pinvoketest2.cs pinvoketest3.cs
+notepad pinvoketest3.cs
+csc /platform:x86 pinvoketest3.cs
+pinvoketest3.exe
+csc /platform:x86 pinvoketest3.cs
+pinvoketest3.exe
+guidgen
+regedit
+doskey /h >cmd_04May2019_evening.txt

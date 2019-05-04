@@ -1,0 +1,26 @@
+<?XML version="1.0"?>
+<package>
+	<component>
+   		<registration progid="METLogistics.AirCargo"/>
+
+   		<public>
+      			<method name="QuoteTariff"/>
+     			<method name="EstimateTime"/>
+   		</public>
+
+   		<script language="JScript">
+      		    <![CDATA[
+      			function QuoteTariff(wgtInKg, dstInKm){
+				var charge1 = (wgtInKg < 10 ? 70 : 75) * wgtInKg;
+				var charge2 = 1200 * (1 + dstInKm / 500 | 0);
+				return charge1 + charge2;
+     			}
+
+			function EstimateTime(dstInKm){
+				return dstInKm / 900 + 2;
+			}
+      		    ]]>
+   		</script>
+	</component>
+</package>
+

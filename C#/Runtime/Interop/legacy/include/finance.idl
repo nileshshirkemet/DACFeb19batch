@@ -1,0 +1,35 @@
+import "oaidl.idl";
+
+[uuid(636B375B-61D0-4AC0-B12C-76682203D983), object]
+interface ILoanScheme : IUnknown
+{
+	HRESULT GetInterestRate([in] short period, [out, retval] float* pResult);
+};
+
+[uuid(562F1E29-A454-4C15-807D-5FCBDF4E0EFF), object]
+interface ILoan : IUnknown
+{
+	HRESULT Acquire([in] double amount, [in] short period);
+	HRESULT GetInstallmentUsingRate([in] float rate, [out, retval] double* pResult);
+	HRESULT GetInstallmentForScheme([in] ILoanScheme* pScheme, [out, retval] double* pResult);
+};
+
+[uuid(60A5EF4F-A282-482D-B276-09F9EAA61DD5), version(1.0)]
+library FinanceLib
+{
+	importlib("stdole32.tlb");
+
+	[uuid(1A87402F-A9F3-449F-ACB3-714A9275BEE0)]	
+	coclass ReducingBalanceLoan
+	{
+		interface ILoan;
+	};
+
+	[uuid(C1817911-F34E-4D01-B0DA-D2CA8E5520E1)]
+	enum LoanError
+	{
+		LOAN_E_INVALIDAMOUNT = 0x80040101,
+		LOAN_E_INVALIDPERIOD = 0x80040102,
+		LOAN_E_NOTACQUIRED = 0x80040103
+	};
+};
