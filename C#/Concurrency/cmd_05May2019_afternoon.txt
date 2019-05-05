@@ -1,0 +1,45 @@
+cd MS.NET\Fundamentals
+md Platform
+cd Platform
+subst s: .
+s:
+e:
+subst /d s:
+subst s: .
+s:
+md Concurrency
+cd Concurrency
+copy z:\Shared\threads\worker.cs
+notepad worker.cs
+notepad threadtest.cs
+csc threadtest.cs worker.cs
+threadtest.exe
+csc threadtest.cs worker.cs
+threadtest.exe
+threadtest.exe 70
+csc threadtest.cs worker.cs
+threadtest.exe 80
+threadtest.exe 120
+copy z:\Shared\threads\threadsynctest.cs
+notepad threadsynctest.cs
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+copy z:\Shared\threads\threadcoordtest.cs
+notepad threadcoordtest.cs
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+doskey /h >cmd_05May2019_afternoon.txt
