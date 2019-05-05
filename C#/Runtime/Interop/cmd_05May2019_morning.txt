@@ -1,0 +1,39 @@
+cd MS.NET\Fundamentals\Runtime
+subst s: .
+s:
+cd Interop
+legacy\x86\quadeq.exe
+tlbimp legacy\x86\quadeq.exe
+dir
+ildasm QuadEq.dll
+notepad rcwtest1.cs
+ildasm QuadEq.dll
+csc rcwtest1.cs /r:QuadEq.dll
+rcwtest1.exe
+cd legacy\x86
+setup
+cd ..\..
+rcwtest1.exe
+csc /platform:x86 rcwtest1.cs /r:QuadEq.dll
+rcwtest1.exe
+csc /platform:x86 rcwtest1.cs /r:QuadEq.dll
+rcwtest1.exe
+oleview legacy\x86\finance.dll
+notepad legacy\include\finance.idl
+tlbimp legacy\x86\finance.dll
+ildasm FinanceLib.dll
+notepad ccwtest.cs
+csc /platform:x86 ccwtest.cs /l:FinanceLib.dll
+ccwtest.exe
+csc /platform:x86 ccwtest.cs /l:FinanceLib.dll
+ccwtest.exe
+csc /platform:x86 ccwtest.cs /l:FinanceLib.dll
+ccwtest.exe
+csc /platform:x86 ccwtest.cs /l:FinanceLib.dll
+ccwtest.exe
+notepad legacy\aircargo.wsc
+notepad rcwtest2.cs
+csc /platform:x86 rcwtest2.cs
+rcwtest2.exe
+notepad legacy\include\finance.idl
+doskey /h >cmd_05May2019_morning.txt
