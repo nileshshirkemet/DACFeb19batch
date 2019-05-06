@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Department xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Title>Accounting</Title>
+  <Employees>
+    <Employee Code="ACC501">
+      <Experience>4</Experience>
+      <Salary>43000</Salary>
+    </Employee>
+    <Employee Code="ACC502">
+      <Experience>6</Experience>
+      <Salary>65000</Salary>
+    </Employee>
+    <Employee Code="ACC503">
+      <Experience>7</Experience>
+      <Salary>67000</Salary>
+    </Employee>
+    <Employee Code="ACC504">
+      <Experience>5</Experience>
+      <Salary>45000</Salary>
+    </Employee>
+    <Employee Code="ACC505">
+      <Experience>3</Experience>
+      <Salary>23000</Salary>
+    </Employee>
+    <Employee Code="ACC506">
+      <Experience>2</Experience>
+      <Salary>13000</Salary>
+    </Employee>
+  </Employees>
+</Department>
