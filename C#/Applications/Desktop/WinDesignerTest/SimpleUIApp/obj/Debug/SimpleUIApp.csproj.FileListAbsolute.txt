@@ -1,0 +1,10 @@
+E:\MS.NET\Applications\Desktop\WinDesignerTest\SimpleUIApp\bin\Debug\SimpleUIApp.exe.config
+E:\MS.NET\Applications\Desktop\WinDesignerTest\SimpleUIApp\bin\Debug\SimpleUIApp.exe
+E:\MS.NET\Applications\Desktop\WinDesignerTest\SimpleUIApp\bin\Debug\SimpleUIApp.pdb
+E:\MS.NET\Applications\Desktop\WinDesignerTest\SimpleUIApp\obj\Debug\SimpleUIApp.csprojResolveAssemblyReference.cache
+E:\MS.NET\Applications\Desktop\WinDesignerTest\SimpleUIApp\obj\Debug\SimpleUIApp.MainForm.resources
+E:\MS.NET\Applications\Desktop\WinDesignerTest\SimpleUIApp\obj\Debug\SimpleUIApp.Properties.Resources.resources
+E:\MS.NET\Applications\Desktop\WinDesignerTest\SimpleUIApp\obj\Debug\SimpleUIApp.csproj.GenerateResource.Cache
+E:\MS.NET\Applications\Desktop\WinDesignerTest\SimpleUIApp\obj\Debug\SimpleUIApp.csproj.CoreCompileInputs.cache
+E:\MS.NET\Applications\Desktop\WinDesignerTest\SimpleUIApp\obj\Debug\SimpleUIApp.exe
+E:\MS.NET\Applications\Desktop\WinDesignerTest\SimpleUIApp\obj\Debug\SimpleUIApp.pdb

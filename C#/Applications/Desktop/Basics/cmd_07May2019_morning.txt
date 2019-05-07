@@ -1,0 +1,28 @@
+cd MS.NET
+md Applications\Desktop\Basics
+cd Applications\Desktop
+subst s: .
+s:
+cd Basics
+notepad winplaintest.cs
+csc winplaintest.cs
+winplaintest.exe
+csc winplaintest.cs
+winplaintest.exe
+csc winplaintest.cs
+winplaintest.exe
+start .
+dummpbin /headers c:\Windows\System32\notepad.exe
+dumpbin /headers c:\Windows\System32\notepad.exe
+dumpbin /headers winplaintest.exe
+csc winplaintest.cs /t:winexe
+copy winplaintest.cs winpainttest.cs
+notepad winpainttest.cs
+csc winpainttest.cs /t:winexe
+copy winplaintest.cs winchildtest.cs
+notepad winchildtest.cs
+copy e:\MS.NET\Fundamentals\Platform\Concurrency\worker.cs
+notepad e:\MS.NET\Fundamentals\Platform\Concurrency\tasktest2.cs
+csc winchildtest.cs worker.cs /t:winexe
+dir
+doskey /h > cmd_07May2019_morning.txt
