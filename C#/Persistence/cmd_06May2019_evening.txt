@@ -1,0 +1,111 @@
+cd MS.NET\Fundamentals\Platform
+subst s: .
+s:
+cd Concurrency
+copy z:\Shared\threads\threadlocaltest.cs
+notepad threadlocaltest.cs
+csc threadlocaltest.cs worker.cs
+threadlocaltest.exe
+csc threadlocaltest.cs worker.cs
+threadlocaltest.exe
+csc threadlocaltest.cs worker.cs
+threadlocaltest.exe
+copy z:\Shared\threads\tasktest1.cs
+notepad tasktest1.cs
+csc tasktest1.cs worker.cs
+tasktest1.exe
+notepad tasktest1.cs
+tasktest1.exe
+csc tasktest1.cs worker.cs
+tasktest1.exe
+copy z:\Shared\threads\tasktest2.cs
+notepad tasktest2.cs
+csc tasktest2.cs worker.cs
+tasktest2.exe
+csc tasktest2.cs worker.cs
+tasktest2.exe
+csc tasktest2.cs worker.cs
+tasktest2.exe
+notepad paralleltest1.cs
+csc paralleltest1.cs worker.cs
+paralleltest1.exe
+csc paralleltest1.cs worker.cs
+paralleltest1.exe
+csc paralleltest1.cs worker.cs
+paralleltest1.exe
+notepad paralleltest2.cs
+csc paralleltest2.cs worker.cs
+paralleltest2.exe
+csc paralleltest2.cs worker.cs
+paralleltest2.exe
+csc paralleltest2.cs worker.cs
+paralleltest2.exe
+md z:\Shared\Testing
+copy paralleltest2.exe z:\Shared\Testing
+cd ..
+md Persistence
+cd Persistence
+doskey /h cmd_06May2019_morning.txt
+doskey /h > cmd_06May2019_morning.txt
+dir
+cd ..
+cd Persistence
+notepad filestrmtest.cs
+csc filestrmtest.cs
+dir
+copy filestrmtest.cs code.txt
+notepad code.txt
+filestrmtest.exe code.txt ecode.txt
+dir
+notepad ecode.txt
+filestrmtest.exe code.txt ecode.txt
+filestrmtest.exe ecode.txt eecode.txt
+dir
+notepad eecode.txt
+notepad filestrmtest.cs
+notepad memmapfiletest.cs
+csc memmapfiletest.cs
+notepad code.txt
+memmapfiletest.exe code.txt
+notepad code.txt
+memmapfiletest.exe code.txt
+notepad code.txt
+notepad readwritetest1.cs
+csc readwritetest1.cs
+readwritetest1.exe 4999.95 20000 HDD
+readwritetest1.exe 
+dir
+notepad item.dat
+copy readwritetest1.cs readwritetest2.cs
+notepad readwritetest2.cs
+csc readwritetest2.cs
+readwritetest2.exe 4999.95 20000 HDD
+readwritetest2.exe 
+dir item.*
+notepad item.txt
+copy z:\Shared\hr.cs serhr.cs
+notepad serhr.cs
+notepad objsertest1.cs
+csc serhr.cs /t:library
+csc objsertest1.cs /r:serhr.dll
+objsertest1.exe Accounting
+objsertest1.exe 
+dir
+notepad dept.dat
+copy z:\Shared\hr.cs xmlserhr.cs
+notepad xmlserhr.cs
+csc xmlserhr.cs /t:library
+copy objsertest1.cs objsertest2.cs
+notepad objsertest2.cs
+csc objsertest2.cs /r:xmlserhr.dll
+objsertest2.exe Accounting
+objsertest2.exe 
+dir dept.*
+notepad dept.xml
+notepad xmllinqtest.cs
+notepad dept.xml
+csc xmllinqtest.cs 
+xmllinqtest.exe
+xmllinqtest.exe 3
+xmllinqtest.exe 5
+doskey /h >cmd_06May2019_evening.txt
