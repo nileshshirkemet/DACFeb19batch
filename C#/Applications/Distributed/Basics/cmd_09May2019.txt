@@ -1,0 +1,40 @@
+cd MS.NET
+cd Applications
+md Distributed
+cd Distributed
+subst s: .
+s:
+md Basics
+cd Basics
+notepad tcplistenertest1.cs
+csc tcplistenertest1.cs 
+start tcplistenertest1.exe
+netstat /noa
+start tcplistenertest1.exe
+tcplistenertest1.exe
+telnet localhost 4010
+csc tcplistenertest1.cs 
+start tcplistenertest1.exe
+telnet localhost 4010
+copy tcplistenertest1.cs tcplistenertest2.cs
+notepad tcplistenertest2.cs
+csc tcplistenertest2.cs
+start tcplistenertest2.exe
+telnet localhost 4010
+notepad tcpclienttest.cs
+csc tcpclienttest.cs
+tcpclienttest.exe INTC
+tcpclienttest.exe SUNW
+tcpclienttest.exe GOGL Virat
+tcpclienttest.exe GOGL khussain
+notepad udpclienttest1.cs
+csc udpclienttest1.cs 
+start udpclienttest1.exe
+notepad udpclienttest2.cs
+csc udpclienttest2.cs
+udpclienttest2.exe
+notepad webclienttest.cs
+csc webclienttest.cs
+webclienttest.exe INTC
+webclienttest.exe SUNW
+doskey /h >cmd_09May2019.txt

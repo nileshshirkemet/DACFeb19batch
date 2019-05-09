@@ -1,0 +1,12 @@
+E:\MS.NET\Applications\Distributed\WcfTest\ClientApp\bin\Debug\ClientApp.exe.config
+E:\MS.NET\Applications\Distributed\WcfTest\ClientApp\bin\Debug\ClientApp.exe
+E:\MS.NET\Applications\Distributed\WcfTest\ClientApp\bin\Debug\ClientApp.pdb
+E:\MS.NET\Applications\Distributed\WcfTest\ClientApp\bin\Debug\Shopping.dll
+E:\MS.NET\Applications\Distributed\WcfTest\ClientApp\bin\Debug\Shopping.pdb
+E:\MS.NET\Applications\Distributed\WcfTest\ClientApp\obj\Debug\ClientApp.csprojResolveAssemblyReference.cache
+E:\MS.NET\Applications\Distributed\WcfTest\ClientApp\obj\Debug\ClientApp.MainForm.resources
+E:\MS.NET\Applications\Distributed\WcfTest\ClientApp\obj\Debug\ClientApp.Properties.Resources.resources
+E:\MS.NET\Applications\Distributed\WcfTest\ClientApp\obj\Debug\ClientApp.csproj.GenerateResource.Cache
+E:\MS.NET\Applications\Distributed\WcfTest\ClientApp\obj\Debug\ClientApp.csproj.CoreCompileInputs.cache
+E:\MS.NET\Applications\Distributed\WcfTest\ClientApp\obj\Debug\ClientApp.exe
+E:\MS.NET\Applications\Distributed\WcfTest\ClientApp\obj\Debug\ClientApp.pdb
