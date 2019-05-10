@@ -1,0 +1,9 @@
+E:\MS.NET\Applications\Distributed\WcfStateTest\ServerApp\bin\Debug\ServerApp.exe.config
+E:\MS.NET\Applications\Distributed\WcfStateTest\ServerApp\bin\Debug\ServerApp.exe
+E:\MS.NET\Applications\Distributed\WcfStateTest\ServerApp\bin\Debug\ServerApp.pdb
+E:\MS.NET\Applications\Distributed\WcfStateTest\ServerApp\bin\Debug\Shopping.dll
+E:\MS.NET\Applications\Distributed\WcfStateTest\ServerApp\bin\Debug\Shopping.pdb
+E:\MS.NET\Applications\Distributed\WcfStateTest\ServerApp\obj\Debug\ServerApp.csprojResolveAssemblyReference.cache
+E:\MS.NET\Applications\Distributed\WcfStateTest\ServerApp\obj\Debug\ServerApp.csproj.CoreCompileInputs.cache
+E:\MS.NET\Applications\Distributed\WcfStateTest\ServerApp\obj\Debug\ServerApp.exe
+E:\MS.NET\Applications\Distributed\WcfStateTest\ServerApp\obj\Debug\ServerApp.pdb

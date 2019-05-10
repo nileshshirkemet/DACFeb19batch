@@ -1,0 +1,6 @@
+E:\MS.NET\Applications\Distributed\WcfStateTest\Shopping\bin\Debug\Shopping.dll
+E:\MS.NET\Applications\Distributed\WcfStateTest\Shopping\bin\Debug\Shopping.pdb
+E:\MS.NET\Applications\Distributed\WcfStateTest\Shopping\obj\Debug\Shopping.csprojResolveAssemblyReference.cache
+E:\MS.NET\Applications\Distributed\WcfStateTest\Shopping\obj\Debug\Shopping.csproj.CoreCompileInputs.cache
+E:\MS.NET\Applications\Distributed\WcfStateTest\Shopping\obj\Debug\Shopping.dll
+E:\MS.NET\Applications\Distributed\WcfStateTest\Shopping\obj\Debug\Shopping.pdb
