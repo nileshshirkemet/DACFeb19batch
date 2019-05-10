@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>PresentationTier</title>
+		<script type="text/javascript" src="jquery.js"></script>
+	</head>
+	<body>
+		<h1>Welcome Customer</h1>
+		<form action="#">
+			<p>
+				<b>Customer ID</b><br/>
+				<input type="text" id="customerIdText"/>
+			</p>
+			<p>
+				<b>Product No</b><br/>
+				<input type="text" id="productNoText"/>
+			</p>
+			<p>
+				<b>Quantity</b><br/>
+				<input type="text" id="quantityText"/>
+			</p>
+			<p>
+				<input type="button" id="orderButton" value="Order" />
+			</p>
+		</form>
+		<script type="text/javascript">
+			$("#orderButton").click(function(){
+				var orderInput = JSON.stringify({
+					customerId: $("#customerIdText").val(),
+					productNo: $("#productNoText").val(),
+					quantity: $("#quantityText").val()
+				});
+				$.ajax("sales/order", {type: "POST", contentType: "application/json", data: orderInput})
+				.done(function(result){
+					alert("New order number is " + result);
+				})
+				.fail(function(xhr, ts, error){
+					alert(xhr.responseText);	
+				});
+			});
+		</script>
+	</body>
+</html>
+

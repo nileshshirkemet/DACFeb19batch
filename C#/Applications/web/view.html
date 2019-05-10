@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title>RESTful Feedback Client</title>
+		<script type="text/javascript" src="angular.js"></script>
+		<script type="text/javascript">
+			var app = angular.module('fbApp', []);
+			app.controller('fbCtrl', function($scope, $http) {
+				$http.get("api/feedbacks", {"headers": {"If-Modified-Since": "0"}})
+				.then(function(response){
+					$scope.entries = response.data;
+				});
+			});
+		</script>
+	</head>
+	<body ng-app="fbApp">
+		<h1>Visitor Feedbacks</h1>
+		<div ng-controller="fbCtrl">
+			<ul ng-repeat="entry in entries">
+				<li>
+					<b>{{entry.from}}</b><br/>
+					- <i>{{entry.comment}}</i><hr/>
+				</li>
+			</ul>
+		</div>
+		<a href="submit.html">Submit your feedback</a>
+	</body>
+</html>
+

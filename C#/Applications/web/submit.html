@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<title>RESTful Feedback Client</title>
+		<script type="text/javascript" src="angular.js"></script>
+		<script type="text/javascript">
+			var app = angular.module('fbApp', []);
+			app.controller('fbCtrl', function($scope, $http) {
+				$scope.readFeedback = function(){
+					$http.get("api/feedbacks/" + $scope.visitor, {"headers": {"If-Modified-Since": "0"}})
+					.then(function(response){
+						$scope.info = response.data.comment;
+					}, function(response){
+						$scope.info = response.statusText;
+					});
+				};
+				$scope.writeFeedback = function(){
+					var feedback = {from:$scope.visitor, comment:$scope.info};
+					$http.post("api/feedbacks", feedback)
+					.then(function(response){
+						$scope.info = response.data;
+					});
+				};
+			});
+		</script>
+	</head>
+	<body ng-app="fbApp">
+		<h1>Welcome Visitor</h1>
+		<form ng-controller="fbCtrl">
+			<p>
+				<b>Name: </b>
+				<input type="text" ng-model="visitor"/>
+				<input type="button" value="Read" ng-click="readFeedback()" />
+			</p>
+			<p>
+				<b>Comment</b><br/>
+				<textarea ng-model="info" cols="32" rows="4"></textarea><br/>
+				<input type="button"  value="Write" ng-click="writeFeedback()" />
+			</p>
+		</form>
+		<a href="view.html">View all feedbacks</a>
+	</body>
+</html>
+
