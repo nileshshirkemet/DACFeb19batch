@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" 
+ xmlns:p="http://www.springframework.org/schema/p" xmlns:c="http://www.springframework.org/schema/c" 
+ xmlns:context="http://www.springframework.org/schema/context" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+ http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+
+	<bean id="javaTrainer1" class="com.met.training.JavaTrainer" primary="true">
+		<constructor-arg value="Ram"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>JPA</value>
+				<value>JDBC</value>
+				<value>RMI</value>
+			</list>
+		</constructor-arg>	
+	</bean>
+	
+	<bean id="javaTrainer2" class="com.met.training.JavaTrainer" autowire-candidate="false">
+		<constructor-arg value="Suresh"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>SPRING</value>
+				<value>HIBERNATE</value>
+			</list>
+		</constructor-arg>
+	</bean>
+	
+		
+	<bean id="metSolutions" class="com.met.training.METSolutions" autowire="byType">
+		<!-- <property name="trainer" ref="javaTrainer1"></property> -->
+	</bean>
+	
+	
+	<bean id="softwareTrainingWorkshop" 
+		class="com.met.training.SoftwareTrainingWorkshop"
+		autowire="constructor">
+		
+		<!-- <constructor-arg ref="metSolutions"></constructor-arg>	 -->
+	</bean>
+
+</beans>

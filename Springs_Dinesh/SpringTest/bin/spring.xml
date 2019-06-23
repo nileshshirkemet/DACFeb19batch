@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" 
+ xmlns:p="http://www.springframework.org/schema/p" xmlns:c="http://www.springframework.org/schema/c" 
+ xmlns:context="http://www.springframework.org/schema/context" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+ http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context-4.0.xsd"
+
+ >
+
+<!-- default-lazy-init="true" -->
+ 
+	<bean id="employee1" class="com.met.spring.Employee"></bean>
+	
+	<bean id="employee2" class="com.met.spring.Employee"></bean>
+	
+	<bean id="employee3" class="com.met.spring.Employee" scope="prototype"></bean>
+	
+	<bean id="employee4" class="com.met.spring.Employee">
+		<constructor-arg value="25"></constructor-arg>
+		<constructor-arg value="Ram"></constructor-arg>
+		<constructor-arg value="35000"></constructor-arg>
+	</bean>
+	
+ 	<bean id="employee5" class="com.met.spring.Employee" lazy-init="true">
+		<constructor-arg index="0" value="25"></constructor-arg>
+		<constructor-arg index="2" value="35000"></constructor-arg>
+		<constructor-arg index="1" value="Ram"></constructor-arg>
+	</bean>
+	
+	<bean id="employee6" class="com.met.spring.Employee">
+		<property name="age" value="30"></property>
+		<property name="name" value="Ramesh"></property>
+		<property name="salary" value="30000"></property>
+	</bean>
+	
+	<bean id="address1" class="com.met.spring.Address">
+		<property name="city" value="Mumbai"></property>
+		<property name="country" value="India"></property>
+	</bean>
+	
+	<bean id="employee7" class="com.met.spring.Employee">
+		<constructor-arg index="0" value="28"></constructor-arg>
+		<constructor-arg index="2" value="75000"></constructor-arg>
+		<constructor-arg index="1" value="Rajan"></constructor-arg>
+		<constructor-arg index="3" ref="address1"></constructor-arg>
+	</bean>
+	
+	<bean id="stage1" class="com.met.spring.Stage" factory-method="getStage"></bean>
+	<bean id="stage2" class="com.met.spring.Stage" factory-method="getStage"></bean>
+ 
+</beans>
