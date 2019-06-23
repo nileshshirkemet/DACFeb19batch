@@ -1,0 +1,102 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html">
+	
+
+	
+</html>
+
+
+<h:body>
+		<h:form>
+			<h:outputText value="UserName: "></h:outputText>
+			<h:inputText id="txtName" value="#{user.name}"></h:inputText>
+			<br></br>
+			<h:outputText value="DOB: "></h:outputText>
+			<h:inputText id="txtDOB" value="#{user.DOB}">				
+			</h:inputText>
+			<br></br>
+			<h:outputText value="EmailAddress: ">				
+			</h:outputText>			
+			<h:inputText id="txtEmail" value="#{user.emailAddress}">				
+			</h:inputText>
+			<br></br>
+			<h:commandButton value="Save User" action="#{user.save()}"></h:commandButton>
+		</h:form>
+	</h:body>
+
+
+@ManagedBean(name="user")
+public class UserBean {
+
+	private String name;
+	private String DOB;
+	private String emailAddress;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getDOB() {
+		return DOB;
+	}
+	public void setDOB(String dOB) {
+		DOB = dOB;
+	}
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+	
+	public void save(){
+		System.out.println("Saving..." +this);
+		//Write code of saving to DB
+	}
+	@Override
+	public String toString() {
+		return "UserBean [name=" + name + ", DOB=" + DOB + ", emailAddress=" + emailAddress + "]";
+	}
+	
+	
+	
+}
+
+
+
+
+<f:convertDateTime pattern="dd-MM-yyyy"></f:convertDateTime>
+
+			<h:message for="txtDOB" style="color:red"></h:message>
+
+<f:validateRegex pattern="^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]+"></f:validateRegex>
+
+			<h:message for="txtEmail"></h:message>
+
+
+
+<h:commandButton value="Save User" action="#{user.saveAndNavigate()}"></h:commandButton>
+
+public String saveAndNavigate(){
+		save();
+		return "userconfirm";
+	}
+
+<h:body>
+		<h:form>
+			<h:outputText value="UserName: "></h:outputText>
+			<h:outputText  value="#{user.name}"></h:outputText>
+			<br></br>
+			<h:outputText value="DOB: "></h:outputText>
+			<h:outputText value="#{user.DOB}"></h:outputText>
+			<br></br>
+			<h:outputText value="Email "></h:outputText>
+			<h:outputText value="#{user.emailAddress}"></h:outputText>
+		</h:form>
+	</h:body>
+
+
+@SessionScoped

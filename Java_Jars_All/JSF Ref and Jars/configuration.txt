@@ -1,0 +1,21 @@
+	Configuration configuration = new Configuration();
+		
+		configuration.setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
+		configuration.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/world");
+		configuration.setProperty("hibernate.connection.username", "dinesh");
+		configuration.setProperty("hibernate.connection.password", "dinesh");			
+		configuration.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+		
+		/*configuration.setProperty("hibernate.hbm2ddl.auto", "create");*/
+		configuration.setProperty("hibernate.show_sql", "true");
+		
+		//configuration.setProperty("hibernate.current_session_context_class", "thread");
+		
+		//configuration.addAnnotatedClass(Product.class);
+		//configuration.addAnnotatedClass(Department.class);
+		configuration.addAnnotatedClass(Customer.class);
+		configuration.addAnnotatedClass(ProductBean.ProductInfo.class);
+		configuration.addAnnotatedClass(Counter.class);
+		configuration.addAnnotatedClass(Order.class);
+		
+		return configuration.buildSessionFactory();

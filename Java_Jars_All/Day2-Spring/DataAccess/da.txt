@@ -1,0 +1,72 @@
+   
+<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+
+			<property name="driverClassName" value="" />
+			<property name="url" value="" />
+			<property name="username" value="dinesh" />
+			<property name="password" value="dinesh" />
+		</bean>
+
+
+create table EmployeeTbl(
+		id int PRIMARY KEY,
+		name varchar2(40),
+		designation varchar2(40),
+		age int
+	);
+
+
+Connection con = null;
+		PreparedStatement preparedStatement = null;
+		
+		try{
+			con = dataSource.getConnection();
+			preparedStatement = con.prepareStatement("insert into EmployeeTbl values (?, ?, ?, ?)");
+			
+			preparedStatement.setInt(1, employee.getId());
+			preparedStatement.setString(2, employee.getName());
+			preparedStatement.setInt(3, employee.getAge());
+			preparedStatement.setString(4, employee.getDesignation());
+			
+			preparedStatement.executeUpdate();
+			
+		}catch(SQLException ex){
+			ex.printStackTrace();
+		}finally{
+			if(preparedStatement != null){
+				try {
+					preparedStatement.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
+			if(con != null){
+				try{
+					con.close();
+				}catch(SQLException ex){
+					ex.printStackTrace();
+				}
+			}
+		}
+
+
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+  			<property name="dataSource" ref="dataSource"></property>
+  		</bean>
+
+<bean id="sessionFactoryBean" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+    	<property name="dataSource" ref="dataSource"></property>
+    	<property name="annotatedClasses">
+    		<list>
+    			<value></value>
+    		</list>
+    	</property>
+    	<property name="hibernateProperties">
+    		<props>
+    			<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+    			<prop key="hibernate.show_sql">true</prop>
+    		</props>
+    	</property>
+     </bean>
